@@ -15,6 +15,7 @@
 
 ### Fixed
 
+- 🐛 Fix makefile [[79926c9](https://github.com/derniercri/packages/commit/79926c9cb65d2d79724ae20f9fc120c64049bf99)]
 - 🐛 Fix build command [[77d9984](https://github.com/derniercri/packages/commit/77d9984d3066dc4913de6dff8bb33db343fa8eb0)]
 
 ### Miscellaneous

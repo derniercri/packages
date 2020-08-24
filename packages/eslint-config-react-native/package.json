@@ -1,6 +1,6 @@
 {
   "name": "@derniercri/eslint-config-react-native",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "React-Native ESLint config",
   "main": "lib/index.js",
   "repository": {
@@ -23,7 +23,7 @@
     "typescript": ">= 3"
   },
   "dependencies": {
-    "@derniercri/eslint-plugin-react-native": "^2.0.1",
+    "@derniercri/eslint-plugin-react-native": "^2.0.2",
     "@react-native-community/eslint-config": "2.0.0",
     "eslint-plugin-import": "2.22.0"
   },
