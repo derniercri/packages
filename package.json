@@ -13,7 +13,8 @@
     "prebuild": "lerna exec --parallel -- rimraf lib",
     "build": "lerna run build",
     "test": "jest",
-    "commit": "git cz"
+    "commit": "git cz",
+    "release": "make release"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
