@@ -1,7 +1,19 @@
 # Changelog
 
-<a name="next"></a>
-## next
+<a name="2.0.3"></a>
+## 2.0.3 (2020-08-24)
+
+### Fixed
+
+- 🐛 Fix Makefile [[7ef9ff0](https://github.com/derniercri/packages/commit/7ef9ff0ff2960329add668a504913e95e0328ba2)]
+
+### Miscellaneous
+
+- 🍻 Just to test [[1110c1d](https://github.com/derniercri/packages/commit/1110c1d2c58f1fe445766eee43ec3b7dea47bf3f)]
+
+
+<a name="2.0.2"></a>
+## 2.0.2 (2020-08-24)
 
 ### Added
 
