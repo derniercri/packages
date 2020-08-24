@@ -16,4 +16,4 @@ echo "Commit ${COMMIT}"
 git tagm $TAG_BEFORE_AMEND $COMMIT
 git push --follow-tags
 
-yarn lerna publish from-git
+yarn lerna publish from-git --yes
