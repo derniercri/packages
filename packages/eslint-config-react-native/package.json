@@ -14,6 +14,9 @@
     "url": "https://github.com/derniercri/packages/issues"
   },
   "homepage": "https://github.com/derniercri/packages/eslint-config-react-native",
+  "scripts": {
+    "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
+  },
   "peerDependencies": {
     "eslint": ">= 6",
     "prettier": ">= 2",

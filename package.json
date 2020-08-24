@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "prebuild": "lerna exec --parallel -- rimraf lib",
-    "build": "lerna exec --parallel -- babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib",
+    "build": "lerna run build",
     "test": "jest",
     "commit": "git cz"
   },

@@ -14,6 +14,9 @@
     "url": "https://github.com/derniercri/packages/issues"
   },
   "homepage": "https://github.com/derniercri/eslint-plugin-react-native#readme",
+  "scripts": {
+    "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
+  },
   "keywords": [
     "eslint",
     "react-native",
