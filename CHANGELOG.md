@@ -9,6 +9,8 @@
 
 ### Changed
 
+- 🔧 Add scripts to release versions [[52c90d4](https://github.com/derniercri/packages/commit/52c90d4bb0b84619bce27771ad4314e4b73af12d)]
+- 🔧 Add changelog [[0deedfd](https://github.com/derniercri/packages/commit/0deedfddd61a9da3ddd461e35d530653caef5d6b)]
 - 🎨 Executable scripts [[23db73a](https://github.com/derniercri/packages/commit/23db73ad48bbb9aa6e8dc1337efbb5d009e85690)]
 
 ### Fixed
