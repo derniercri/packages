@@ -31,5 +31,8 @@
     "react": "16.13.1",
     "typescript": "3.9.7"
   },
-  "browserslist": "> 0.25%, not dead"
+  "browserslist": "> 0.25%, not dead",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
