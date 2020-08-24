@@ -9,7 +9,7 @@ git add CHANGELOG.md
 TAG_BEFORE_AMEND=`git tag --points-at HEAD`
 echo "Tag before commit ${TAG_BEFORE_AMEND}"
 
-git commit --amend
+git commit --amend --no-edit
 COMMIT=`git rev-parse HEAD`
 echo "Commit ${COMMIT}"
 
