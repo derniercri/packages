@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="2.0.5"></a>
+## 2.0.5 (2020-08-24)
+
+### Miscellaneous
+
+- 🚀 Automatically publish without asking [[b7af0cf](https://github.com/derniercri/packages/commit/b7af0cf81ab4d6a3cab10199ba2eca21b5e0db92)]
+
+
 <a name="2.0.4"></a>
 ## 2.0.4 (2020-08-24)
 
