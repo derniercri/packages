@@ -1,28 +1,28 @@
-# @dbenfouzari/eslint-plugin-react-native
+# @derniercri/eslint-plugin-react-native
 
 ## Installation
 
 ```shell
-yarn add -D @dbenfouzari/eslint-plugin-react-native
+yarn add -D @derniercri/eslint-plugin-react-native
 ```
 
 or if you are using npm
 
 ```shell
-npm i -D @dbenfouzari/eslint-plugin-react-native
+npm i -D @derniercri/eslint-plugin-react-native
 ```
 
 Enable it by inserting in your project
 
 ```json
 {
-  "plugins": ["@dbenfouzari/react-native"]
+  "plugins": ["@derniercri/react-native"]
 }
 ```
 
 ## Available rules
 
-### `@dbenfouzari/react-native/no-child-string`
+### `@derniercri/react-native/no-child-string`
 
 This rule will avoid you using text as children.
 Useful when you want to enforce `i18n`.
@@ -31,9 +31,9 @@ Example :
 
 ```json
 {
-  "plugins": ["@dbenfouzari/react-native"],
+  "plugins": ["@derniercri/react-native"],
   "rules": {
-    "@dbenfouzari/react-native/no-child-string": ["error"]
+    "@derniercri/react-native/no-child-string": ["error"]
   }
 }
 ```

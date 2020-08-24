@@ -12,7 +12,8 @@
   "scripts": {
     "prebuild": "lerna exec --parallel -- rimraf lib",
     "build": "lerna exec --parallel -- babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib",
-    "test": "jest"
+    "test": "jest",
+    "commit": "git cz"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -21,14 +22,8 @@
     "@babel/preset-typescript": "^7.10.4",
     "commitizen": "^4.1.5",
     "cz-gitmoji": "^0.0.7",
-    "husky": "^4.2.5",
     "jest": "^26.4.2",
     "lerna": "^3.22.1",
     "rimraf": "^3.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
   }
 }

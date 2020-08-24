@@ -6,8 +6,8 @@
       "jsx": true
     }
   },
-  "plugins": ["@dbenfouzari/react-native"],
+  "plugins": ["@derniercri/react-native"],
   "rules": {
-    "@dbenfouzari/react-native/no-child-string": ["error"]
+    "@derniercri/react-native/no-child-string": ["error"]
   }
 }

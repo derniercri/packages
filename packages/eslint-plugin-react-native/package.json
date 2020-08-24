@@ -1,18 +1,19 @@
 {
-  "name": "@dbenfouzari/eslint-plugin-react-native",
+  "name": "@derniercri/eslint-plugin-react-native",
   "version": "2.0.0",
   "main": "lib/index.js",
   "license": "MIT",
   "description": "Derniercri ESLint plugin for React-Native",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbenfouzari/eslint-plugin-react-native.git"
+    "url": "git+https://github.com/derniercri/packages.git",
+    "directory": "packages/eslint-plugin-react-native"
   },
   "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
   "bugs": {
-    "url": "https://github.com/dbenfouzari/eslint-plugin-react-native/issues"
+    "url": "https://github.com/derniercri/packages/issues"
   },
-  "homepage": "https://github.com/dbenfouzari/eslint-plugin-react-native#readme",
+  "homepage": "https://github.com/derniercri/eslint-plugin-react-native#readme",
   "keywords": [
     "eslint",
     "react-native",

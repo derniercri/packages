@@ -34,7 +34,7 @@ describe("With i18n", () => {
     ...baseConfig,
     rules: {
       ...(baseConfig.rules || {}),
-      "@dbenfouzari/react-native/no-child-string": ["error"],
+      "@derniercri/react-native/no-child-string": ["error"],
     },
   };
 
