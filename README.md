@@ -22,3 +22,13 @@ npm login --registry=https://npm.pkg.github.com/ --scope=@derniercri
 ```shell script
 yarn add @derniercri/YOUR_PACKAGE
 ```
+
+## Release a new version
+
+If you want to release a new version, just run
+
+```bash
+yarn release
+```
+
+It will prompt you with several questions and at the end, it will push a new version to Github.
