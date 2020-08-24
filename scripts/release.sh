@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yarn lerna version --no-push --force-git-tag
+yarn lerna version --no-push --force-git-tag --force-publish
 git stash
 yarn gitmoji-changelog
 git stash pop stash@{0}
