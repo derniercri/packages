@@ -10,12 +10,15 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib"
+    "prebuild": "lerna exec --parallel -- rimraf lib",
+    "build": "lerna exec --parallel -- babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
-    "lerna": "^3.22.1"
+    "@babel/preset-typescript": "^7.10.4",
+    "lerna": "^3.22.1",
+    "rimraf": "^3.0.2"
   }
 }
