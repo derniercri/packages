@@ -1,0 +1,33 @@
+{
+  "name": "@derniercri/cli-tools",
+  "version": "2.0.0",
+  "description": "Some wonderful tools :)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derniercri/packages.git",
+    "directory": "packages/cli-tools"
+  },
+  "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derniercri/packages/issues"
+  },
+  "homepage": "https://github.com/derniercri/packages/cli-tools",
+  "browserslist": "> 0.25%, not dead",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bin": {
+    "generate-component": "scripts/generate-component.js",
+    "generate-native-component": "scripts/generate-native-component.js",
+    "generate-react-component": "scripts/generate-react-component.js"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "inquirer-fuzzy-path": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^7.3.1",
+    "yargs": "^15.4.1"
+  }
+}
