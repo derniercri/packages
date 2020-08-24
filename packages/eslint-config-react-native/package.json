@@ -13,9 +13,6 @@
     "url": "https://github.com/dbenfouzari/eslint-config-react-native/issues"
   },
   "homepage": "https://github.com/dbenfouzari/eslint-config-react-native",
-  "scripts": {
-    "test": "jest"
-  },
   "peerDependencies": {
     "eslint": ">= 6",
     "prettier": ">= 2",
@@ -30,7 +27,6 @@
     "@react-native-community/eslint-config": "2.0.0",
     "eslint": "7.7.0",
     "eslint-plugin-import": "2.22.0",
-    "jest": "26.4.2",
     "react": "16.13.1",
     "typescript": "3.9.7"
   },

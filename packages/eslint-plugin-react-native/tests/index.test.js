@@ -4,7 +4,9 @@ describe("eslint-plugin-react-native", () => {
   it("should return an error with JavaScript file", async () => {
     const eslint = new ESLint();
 
-    const result = await eslint.lintFiles(["example/index.js"]);
+    const result = await eslint.lintFiles([
+      "packages/eslint-plugin-react-native/example/index.js",
+    ]);
 
     expect(result).toEqual([
       {
@@ -44,7 +46,9 @@ describe("eslint-plugin-react-native", () => {
   it("should return an error with TypeScript file", async () => {
     const eslint = new ESLint();
 
-    const result = await eslint.lintFiles(["example/index.tsx"]);
+    const result = await eslint.lintFiles([
+      "packages/eslint-plugin-react-native/example/index.tsx",
+    ]);
 
     expect(result).toEqual([
       {

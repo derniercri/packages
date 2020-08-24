@@ -8,7 +8,8 @@ describe("Normal config", () => {
   });
 
   it("should result to something in ts", async () => {
-    const invalidTs = "example/recommended-example.tsx";
+    const invalidTs =
+      "packages/eslint-config-react-native/example/recommended-example.tsx";
     const result = await eslint.lintFiles([invalidTs]);
 
     expect(result).toEqual([
@@ -43,7 +44,8 @@ describe("With i18n", () => {
   });
 
   it("should result to something in ts", async () => {
-    const invalidTs = "example/recommended-example.tsx";
+    const invalidTs =
+      "packages/eslint-config-react-native/example/recommended-example.tsx";
     const result = await eslint.lintFiles([invalidTs]);
 
     expect(result).toEqual([
