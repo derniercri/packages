@@ -1,6 +1,6 @@
 {
   "name": "@derniercri/eslint-plugin-react-native",
-  "version": "2.0.2",
+  "version": "2.0.4",
   "main": "lib/index.js",
   "license": "MIT",
   "description": "Derniercri ESLint plugin for React-Native",

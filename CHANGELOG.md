@@ -1,5 +1,22 @@
 # Changelog
 
+<a name="2.0.4"></a>
+## 2.0.4 (2020-08-24)
+
+### Added
+
+- ✨ Deploy release [[6c2eb26](https://github.com/derniercri/packages/commit/6c2eb26c0640b42337298f1a5f7fdaeb599b3137)]
+
+### Changed
+
+- ⚡ Do not ask for commit again [[3e745be](https://github.com/derniercri/packages/commit/3e745be5c6c912faff154b299545d374dee81bf1)]
+- 🎨 Remove useless code and add README [[9788420](https://github.com/derniercri/packages/commit/978842037476ed39ba348b3baae5ca0a48c8e14a)]
+
+### Miscellaneous
+
+- 🚀 Force publish all packages [[27adfc4](https://github.com/derniercri/packages/commit/27adfc4bb4aa65155af311e54c3718a1e47c16be)]
+
+
 <a name="2.0.3"></a>
 ## 2.0.3 (2020-08-24)
 
