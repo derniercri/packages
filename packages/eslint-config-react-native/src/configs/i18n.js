@@ -1,6 +1,6 @@
 module.exports = {
-  plugins: ["@derniercri/react-native"],
+  plugins: ["@derniercri/i18n"],
   rules: {
-    "@derniercri/react-native/no-child-string": "off",
+    "@derniercri/i18n/no-child-string": "off",
   },
 };

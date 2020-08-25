@@ -1,11 +1,11 @@
 import { ESLint } from "eslint";
 
-describe("eslint-plugin-react-native", () => {
+describe("eslint-plugin-i18n", () => {
   it("should return an error with JavaScript file", async () => {
     const eslint = new ESLint();
 
     const result = await eslint.lintFiles([
-      "packages/eslint-plugin-react-native/example/index.js",
+      "packages/eslint-plugin-i18n/example/index.js",
     ]);
 
     expect(result).toEqual([
@@ -19,7 +19,7 @@ describe("eslint-plugin-react-native", () => {
             line: 3,
             message: "Raw text `Hello World !` cannot be used as children",
             nodeType: "JSXText",
-            ruleId: "@derniercri/react-native/no-child-string",
+            ruleId: "@derniercri/i18n/no-child-string",
             severity: 2,
           },
           {
@@ -29,7 +29,7 @@ describe("eslint-plugin-react-native", () => {
             line: 5,
             message: "Raw text `Hello, World !` cannot be used as children",
             nodeType: "JSXText",
-            ruleId: "@derniercri/react-native/no-child-string",
+            ruleId: "@derniercri/i18n/no-child-string",
             severity: 2,
           },
         ],
@@ -47,7 +47,7 @@ describe("eslint-plugin-react-native", () => {
     const eslint = new ESLint();
 
     const result = await eslint.lintFiles([
-      "packages/eslint-plugin-react-native/example/index.tsx",
+      "packages/eslint-plugin-i18n/example/index.tsx",
     ]);
 
     expect(result).toEqual([
@@ -61,7 +61,7 @@ describe("eslint-plugin-react-native", () => {
             line: 3,
             message: "Raw text `Hello World !` cannot be used as children",
             nodeType: "JSXText",
-            ruleId: "@derniercri/react-native/no-child-string",
+            ruleId: "@derniercri/i18n/no-child-string",
             severity: 2,
           },
           {
@@ -71,7 +71,7 @@ describe("eslint-plugin-react-native", () => {
             line: 5,
             message: "Raw text `Hello, World !` cannot be used as children",
             nodeType: "JSXText",
-            ruleId: "@derniercri/react-native/no-child-string",
+            ruleId: "@derniercri/i18n/no-child-string",
             severity: 2,
           },
         ],

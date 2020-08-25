@@ -23,7 +23,7 @@
     "typescript": ">= 3"
   },
   "dependencies": {
-    "@derniercri/eslint-plugin-react-native": "^2.0.5",
+    "@derniercri/eslint-plugin-i18n": "^2.0.5",
     "@react-native-community/eslint-config": "2.0.0",
     "eslint-plugin-import": "2.22.0"
   },
