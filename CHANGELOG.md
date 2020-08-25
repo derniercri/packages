@@ -1,5 +1,20 @@
 # Changelog
 
+<a name="3.0.0"></a>
+## 3.0.0 (2020-08-25)
+
+### Changed
+
+- 🔧 Safety in release script [[d73207c](https://github.com/derniercri/packages/commit/d73207cde8477a54347d9f92879152a5b57c7877)]
+- 🎨 Missing old name [[ed8fc97](https://github.com/derniercri/packages/commit/ed8fc976067f4e42ec3cfd0817ec4846d39bb17f)]
+- 🎨 Rename package [[f6d2f61](https://github.com/derniercri/packages/commit/f6d2f61026722e6d9b5b8b4ec6b09c54d42016e2)]
+- 🔧 Remove useless deps and check commits [[dd2efe2](https://github.com/derniercri/packages/commit/dd2efe2d526cb23e06dbf2da11fcaf40018b56f5)]
+
+### Fixed
+
+- 🐛 Rename publish commit [[d637be6](https://github.com/derniercri/packages/commit/d637be60c3233fc8b06a097abd2296ae533f8f62)]
+
+
 <a name="2.0.5"></a>
 ## 2.0.5 (2020-08-24)
 
