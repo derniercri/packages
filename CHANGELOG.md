@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="3.1.0"></a>
+## 3.1.0 (2020-08-25)
+
+### Miscellaneous
+
+- 📦 Newcomer : react-native-template-derniercri [[7f09818](https://github.com/derniercri/packages/commit/7f098181ad1cea4f63a219b81fec6e9e5ae9b107)]
+
+
 <a name="3.0.0"></a>
 ## 3.0.0 (2020-08-25)
 
