@@ -7,7 +7,7 @@
   "useWorkspaces": true,
   "command": {
     "version": {
-      "message": "🔖 Publish %s"
+      "message": ":bookmark: Publish %s"
     }
   }
 }
