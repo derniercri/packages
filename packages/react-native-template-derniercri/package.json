@@ -1,0 +1,31 @@
+{
+  "name": "@derniercri/react-native-template-derniercri",
+  "version": "0.0.1",
+  "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derniercri/packages.git",
+    "directory": "packages/react-native-template-derniercri"
+  },
+  "keywords": [
+    "react-native",
+    "typescript",
+    "react-navigation",
+    "jest",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derniercri/packages/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "homepage": "https://github.com/derniercri/packages#readme"
+}
