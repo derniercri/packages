@@ -70,16 +70,16 @@ Benefits are multiple : it will avoid many conflits caused by a committer that i
 
 I personnaly enable it on every project I work on, and I can't do without it.
 
-### `@derniercri/eslint-plugin-react-native`
+### `@derniercri/eslint-plugin-i18n`
 
 It's `off` by default.
 You can enable it by doing
 
 ```json
 {
-  "extends": ["@derniercri/react-native"],
+  "extends": ["@derniercri/i18n"],
   "rules": {
-    "@derniercri/react-native/no-child-string": ["error"]
+    "@derniercri/i18n/no-child-string": ["error"]
   }
 }
 ```
