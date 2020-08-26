@@ -1,10 +1,22 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "04:00"
-  open-pull-requests-limit: 10
-  assignees:
-  - dbenfouzari
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "dbenfouzari"
+
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    assignees:
+      - "dbenfouzari"
+    ignore:
+      # Since @typescript-eslint/estree is not yet compatible with current TypeScript version
+      # Check often !
+      - dependency-name: "typescript"
+        versions: ["4.x"]
