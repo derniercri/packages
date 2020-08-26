@@ -23,6 +23,15 @@ npm login --registry=https://npm.pkg.github.com/ --scope=@derniercri
 yarn add @derniercri/YOUR_PACKAGE
 ```
 
+### If you love DernierCri packages
+
+Instead of using project `.npmrc` file, you can edit your personal `.npmrc` at `~/.npmrc` and add/edit these lines :
+
+```
+//npm.pkg.github.com/:_authToken=YOUR_TOKEN
+@derniercri:registry=https://npm.pkg.github.com
+```
+
 ## Release a new version
 
 If you want to release a new version, just run
