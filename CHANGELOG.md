@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="3.3.1"></a>
+## 3.3.1 (2020-08-26)
+
+### Changed
+
+- 🔧 Build before publish [[48b8325](https://github.com/derniercri/packages/commit/48b83253732681b2f06c2046af5a4754e0a16551)]
+
+
 <a name="3.3.0"></a>
 ## 3.3.0 (2020-08-26)
 
