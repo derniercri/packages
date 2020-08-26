@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="3.1.1"></a>
+## 3.1.1 (2020-08-26)
+
+### Added
+
+- ✨ Add prettier eslint integration [[c25c84b](https://github.com/derniercri/packages/commit/c25c84bee31e1ead9f0b4e257bdd191795783099)]
+
+### Miscellaneous
+
+-  Update README.md [[1b3893b](https://github.com/derniercri/packages/commit/1b3893bde35f42b5bf28f92944b0f67154b0f694)]
+-  Update README.md [[d14956d](https://github.com/derniercri/packages/commit/d14956d567b4d92c5e9870f3cd87ae076d2c9089)]
+
+
 <a name="3.1.0"></a>
 ## 3.1.0 (2020-08-25)
 
