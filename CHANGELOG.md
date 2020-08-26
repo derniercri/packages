@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="3.1.2"></a>
+## 3.1.2 (2020-08-26)
+
+### Changed
+
+- 🎨 Add prettier integration in template [[b9cee71](https://github.com/derniercri/packages/commit/b9cee7137fd49086d108f1cfb4f956c3f0281636)]
+
+
 <a name="3.1.1"></a>
 ## 3.1.1 (2020-08-26)
 
