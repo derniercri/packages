@@ -25,7 +25,6 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import StorybookUIRoot from '../../storybook/index';
 import env from '../modules/env';
 
 declare const global: { HermesInternal: null | {} };
