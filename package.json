@@ -13,6 +13,7 @@
     "prebuild": "lerna exec --parallel -- rimraf lib",
     "build": "lerna run build",
     "test": "jest",
+    "prepare": "yarn build",
     "release": "./scripts/release.sh"
   },
   "husky": {
