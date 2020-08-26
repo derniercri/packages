@@ -4,9 +4,10 @@
  */
 
 module.exports = {
-  extends: ["@react-native-community", "react-native", "prettier"],
-  rules: {
-    // Let TypeScript do its things
-    "import/no-extraneous-dependencies": "off",
-  },
+  extends: [
+    "@react-native-community",
+    "react-native",
+    "plugin:react-native/all",
+    "prettier",
+  ],
 };

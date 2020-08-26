@@ -9,9 +9,13 @@ module.exports = {
     "plugin:import/typescript",
   ],
   rules: {
+    //#region Let TypeScript do its things
+    "import/no-extraneous-dependencies": "off",
     "import/default": "off",
     "import/no-unresolved": "off",
     "import/namespace": "off",
+    //#endregion
+
     "import/order": [
       "error",
       {
