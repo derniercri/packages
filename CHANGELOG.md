@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="3.3.3"></a>
+## 3.3.3 (2020-08-26)
+
+### Added
+
+- ✨ Better config [[769147f](https://github.com/derniercri/packages/commit/769147f4960c28f825e346dc5012d1407137a2d4)]
+
+
 <a name="3.3.2"></a>
 ## 3.3.2 (2020-08-26)
 
