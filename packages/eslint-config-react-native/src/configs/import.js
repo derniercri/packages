@@ -16,6 +16,9 @@ module.exports = {
     "import/namespace": "off",
     //#endregion
 
+    // Just, why ??
+    "import/prefer-default-export": "off",
+
     "import/order": [
       "error",
       {

@@ -4,10 +4,8 @@
  */
 
 module.exports = {
-  extends: [
-    "@react-native-community",
-    "react-native",
-    "plugin:react-native/all",
-    "prettier",
-  ],
+  extends: ["@react-native-community", "plugin:react-native/all", "prettier"],
+  rules: {
+    "no-empty-function": "off",
+  },
 };
