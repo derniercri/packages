@@ -1,6 +1,5 @@
 import example from "./index";
 import React from "react";
-import path from "path";
 
 // Should cry about variable not used
 const square = (n: number) => n * n;

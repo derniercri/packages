@@ -16,9 +16,9 @@ describe("Normal config", () => {
       {
         filePath: path.resolve(invalidTs),
         messages: expect.any(Array),
-        errorCount: 7,
+        errorCount: 8,
+        fixableErrorCount: 2,
         warningCount: 0,
-        fixableErrorCount: 3,
         fixableWarningCount: 0,
         source: expect.any(String),
         usedDeprecatedRules: expect.any(Array),
@@ -52,9 +52,9 @@ describe("With i18n", () => {
       {
         filePath: path.resolve(invalidTs),
         messages: expect.any(Array),
-        errorCount: 8,
+        errorCount: 9,
+        fixableErrorCount: 2,
         warningCount: 0,
-        fixableErrorCount: 3,
         fixableWarningCount: 0,
         source: expect.any(String),
         usedDeprecatedRules: expect.any(Array),
