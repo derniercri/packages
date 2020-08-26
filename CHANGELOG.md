@@ -1,5 +1,28 @@
 # Changelog
 
+<a name="3.2.0"></a>
+## 3.2.0 (2020-08-26)
+
+### Added
+
+- ✨ Add eslint-config-react-native [[24442ed](https://github.com/derniercri/packages/commit/24442edba4bf8af2fa383300f4c0b63e64cc58de)]
+- 👷‍♂️ Add Github actions [[5f56f59](https://github.com/derniercri/packages/commit/5f56f598721a0f47e0d402c589ba72c16fd62f0a)]
+
+### Changed
+
+- ⬆️ Bump actions/setup-node from v1 to v2.1.1 [[689371d](https://github.com/derniercri/packages/commit/689371d471bfa145ecf7d101929ff5774e0f4cb2)]
+- 🔧 Better dependabot config [[fbbea73](https://github.com/derniercri/packages/commit/fbbea73fd0e6639863c1e718f34be5d829c9be4c)]
+- ⬆️ Bump actions/setup-node from v1 to v2.1.1 [[a1f309c](https://github.com/derniercri/packages/commit/a1f309c247a023b15f4843087afd1617bb728288)]
+
+### Miscellaneous
+
+-  Update README.md [[69364d6](https://github.com/derniercri/packages/commit/69364d6c59aea48ffcb63b0f916c981e7e4fe499)]
+-  Update issue templates [[3fd8363](https://github.com/derniercri/packages/commit/3fd8363e223aa39a759252f5c7121aa5b51ec438)]
+-  Create CODE_OF_CONDUCT.md [[de8c3f2](https://github.com/derniercri/packages/commit/de8c3f2800eaff7ed6ab68a38b167896240e0c1b)]
+-  Merge pull request [#3](https://github.com/derniercri/packages/issues/3) from derniercri/dependabot/add-v2-config-file [[096dc73](https://github.com/derniercri/packages/commit/096dc7322995d69d3749e9915489c3582dde8343)]
+-  Create Dependabot config file [[06fae0c](https://github.com/derniercri/packages/commit/06fae0cb63b9e65309058677688fe88b72f922f2)]
+
+
 <a name="3.1.2"></a>
 ## 3.1.2 (2020-08-26)
 
