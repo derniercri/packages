@@ -5,7 +5,8 @@
 
 ## Installation
 
-To be able to install any of the packages here, you have to follow a few more steps.
+
+Since the packages are stored into [Github Packages](https://github.com/features/packages), you have to follow a few more steps to make it work.
 
 1. In a command line, type
 
@@ -23,9 +24,9 @@ npm login --registry=https://npm.pkg.github.com/ --scope=@derniercri
 yarn add @derniercri/YOUR_PACKAGE
 ```
 
-### If you love DernierCri packages
+### If you love DernierCri packages (or don't want to worry about it again)
 
-Instead of using project `.npmrc` file, you can edit your personal `.npmrc` at `~/.npmrc` and add/edit these lines :
+Instead of using project's `.npmrc` file, you can edit your `~/.npmrc` and add/edit these lines :
 
 ```
 //npm.pkg.github.com/:_authToken=YOUR_TOKEN
