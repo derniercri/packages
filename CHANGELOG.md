@@ -1,5 +1,17 @@
 # Changelog
 
+<a name="3.3.0"></a>
+## 3.3.0 (2020-08-26)
+
+### Added
+
+- ✨ Add all eslint-plugin-react-native rules [[f1a644f](https://github.com/derniercri/packages/commit/f1a644f10cb89f2942323fd79d47d607e083707c)]
+
+### Changed
+
+- 🎨 Explicit tests [[0b8f49f](https://github.com/derniercri/packages/commit/0b8f49ff949136339b730d3999dbb61ce7ac1cb9)]
+
+
 <a name="3.2.0"></a>
 ## 3.2.0 (2020-08-26)
 
