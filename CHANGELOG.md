@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="3.3.2"></a>
+## 3.3.2 (2020-08-26)
+
+### Fixed
+
+- 🐛 Add missing dependency [[f4d835d](https://github.com/derniercri/packages/commit/f4d835d6d4e28a0179eebc1fef5a42d01156ff7a)]
+
+
 <a name="3.3.1"></a>
 ## 3.3.1 (2020-08-26)
 
