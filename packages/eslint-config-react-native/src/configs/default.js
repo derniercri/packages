@@ -7,5 +7,6 @@ module.exports = {
   extends: ["@react-native-community", "plugin:react-native/all", "prettier"],
   rules: {
     "no-empty-function": "off",
+    "react-native/no-raw-text": ["error"],
   },
 };
