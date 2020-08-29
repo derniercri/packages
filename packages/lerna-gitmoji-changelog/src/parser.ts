@@ -6,6 +6,7 @@ import * as groupMapping from "./group-mapping";
 
 type ParsedCommit = {
   hash: string;
+  longHash: string;
   gitmoji: string;
   gitmojiName: string;
   commit: string;
@@ -25,16 +26,23 @@ export const parseLog = (log: string) => {
   if (!result.length) throw new RangeError("Cannot parse the log");
 
   return result.map((r) => {
+    const longHash = git.getLongHash(r.groups!.hash);
     const filesUpdated = git.getFilesInHash(r.groups!.hash).filter(Boolean);
     const packageFiles = filesUpdated.filter((file) => /packages\//.test(file));
 
-    return { ...r.groups, files: filesUpdated, packageFiles };
+    return { ...r.groups, files: filesUpdated, packageFiles, longHash };
   }) as ParsedCommit[];
+};
+
+export const getPackageFromFile = (fileName: string) => {
+  if (!fileName.startsWith('packages/')) return null;
+  return fileName.split('/')[1];
 };
 
 export const parsedLogToMarkdown = (tag: string, parsedLog: ParsedCommit[]) => {
   const currentChangelog = changelog.loadChangelog();
   const tagDate = git.getTagDate(tag);
+  const remote = git.getRemoteAtHttps();
 
   const groupedParsedLog = parsedLog.reduce((all, commit) => {
     const group = groupMapping.getGroupForGitmoji(commit.gitmojiName);
@@ -53,12 +61,16 @@ export const parsedLogToMarkdown = (tag: string, parsedLog: ParsedCommit[]) => {
       if (name === "useless") return final;
 
       final += `
+
 ### ${label}
 `;
-      commits.forEach((commit) => {
+      commits.forEach(({ gitmoji, commit, hash, longHash, packageFiles }) => {
+        const uniqPackages = [...new Set(packageFiles.map(getPackageFromFile))].filter(Boolean);
         final += `
-- ${groupMapping.getGitmojiFromName(commit.gitmoji)} ${commit.commit} TODO: Link to Github
-`;
+- ${groupMapping.getGitmojiFromName(gitmoji)} ${commit} [[${hash}](${remote}/commit/${longHash})]`;
+
+        final += uniqPackages.map(pf => `
+  - \`${pf}\``)
       });
 
       return final;
@@ -66,8 +78,7 @@ export const parsedLogToMarkdown = (tag: string, parsedLog: ParsedCommit[]) => {
     `# Changelog
 
 <a name="${tag}"></a>
-## ${tag} (${tagDate})
-`
+## ${tag} (${tagDate})`
   );
 
   return currentChangelog.replace("# Changelog", result);
