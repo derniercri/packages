@@ -7,6 +7,9 @@
     "url": "git+https://github.com/derniercri/packages.git",
     "directory": "packages/lerna-gitmoji-changelog"
   },
+  "bin": {
+    "generate-changelog": "./scripts/generate-changelog.js"
+  },
   "scripts": {
     "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
   },
