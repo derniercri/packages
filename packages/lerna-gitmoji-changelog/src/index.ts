@@ -29,7 +29,7 @@ export const generateChangelog = () => {
 
     if (!lastWrittenTag) return lastWrittenTag;
 
-    const log = git.getDiffBetweenTags(lastWrittenTag, lastTag || 'HEAD');
+    const log = git.getDiffBetweenTags(`v${lastWrittenTag}`, lastTag || 'HEAD');
     const parsed = parser.parseLog(log);
     const markdown = parser.parsedLogToMarkdown(lastTag, parsed);
 
