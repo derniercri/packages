@@ -7,7 +7,7 @@ const exec = (command: string) => execSync(command, { encoding: "utf8" });
  * @returns {String} A tag, should be `vX.X.X`
  */
 export const getLastTag = (): string =>
-  exec("git describe --tags $(git rev-list --tags --max-count=1)");
+  exec("git describe --tags $(git rev-list --tags --max-count=1)").replace('\n', '');
 
 /**
  *
