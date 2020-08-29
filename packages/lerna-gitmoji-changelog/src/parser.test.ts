@@ -1,5 +1,4 @@
-import { parsedLogToMarkdown, parseLog } from "./parser";
-import * as git from "./git";
+import { parseLog } from "./parser";
 
 describe("Parser", function () {
   describe("parseLog", () => {
@@ -33,6 +32,7 @@ packages/eslint-config-react-native/__tests__/index.test.js
       const expectedResult: ReturnType<typeof parseLog> = [
         {
           hash: "ac6fdcd",
+          longHash: 'ac6fdcdf4616e857801095e255064f966b519724',
           gitmoji: ":bookmark:",
           gitmojiName: "bookmark",
           commit: "Publish v3.3.4",
@@ -53,6 +53,7 @@ packages/eslint-config-react-native/__tests__/index.test.js
         },
         {
           hash: "2458c93",
+          longHash: '2458c9391ecf8bfdcca540e186e7ad50efca70ff',
           gitmoji: ":white_check_mark:",
           gitmojiName: "white_check_mark",
           commit: "Better tests",
@@ -71,6 +72,7 @@ packages/eslint-config-react-native/__tests__/index.test.js
         },
         {
           hash: "4cbccfc",
+          longHash: '4cbccfc58f0347227a3a4fb242d0c0a395d1a40a',
           gitmoji: ":wrench:",
           gitmojiName: "wrench",
           commit: "Better TypeScript coding",
@@ -79,6 +81,7 @@ packages/eslint-config-react-native/__tests__/index.test.js
         },
         {
           hash: "e6138ef",
+          longHash: 'e6138ef2c1ce58612cc7dcc66e63ae7087061d07',
           gitmoji: ":white_check_mark:",
           gitmojiName: "white_check_mark",
           commit: "Fixed tests",

@@ -109,12 +109,13 @@ package.json
 
 ### Added
 
-- ✅ Better tests TODO: Link to Github
+- ✅ Better tests [[2458c93](https://github.com/derniercri/packages/commit/2458c9391ecf8bfdcca540e186e7ad50efca70ff)]
+  - \`toto\`
 
 ### Changed
 
-- 🔧 Better TypeScript coding TODO: Link to Github
-
+- 🔧 Better TypeScript coding [[4cbccfc](https://github.com/derniercri/packages/commit/4cbccfc58f0347227a3a4fb242d0c0a395d1a40a)]
+  - \`toto\`
 
 <a name="3.3.4"></a>
 ## 3.3.4 (2020-08-28)
