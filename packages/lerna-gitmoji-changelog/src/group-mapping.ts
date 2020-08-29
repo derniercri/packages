@@ -1,4 +1,4 @@
-import gitmojis from './gitmojis.json';
+import gitmojis from './gitmojis';
 
 type Groups = {
   [key: string]: {
