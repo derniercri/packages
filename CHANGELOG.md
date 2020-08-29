@@ -1,5 +1,30 @@
 # Changelog
 
+<a name="v3.3.6"></a>
+## v3.3.6 (2020-08-29)
+
+### Changed
+
+- 🔧 Update changelog generator [[18f67cc](https://github.com/derniercri/packages/commit/18f67cca608541238aa915ee39396aef6f1dd8b9)]
+
+### Fixed
+
+- 🐛 Fix parsing [[194d393](https://github.com/derniercri/packages/commit/194d393b286b0d8d451d3c4685e3af6d0c04a91e)]
+  - `lerna-gitmoji-changelog`
+- 🐛 Fix tag breakline [[e602754](https://github.com/derniercri/packages/commit/e602754a4581d56d96b02c0a159c42a250d9282b)]
+  - `lerna-gitmoji-changelog`
+- 🐛 Fix tag check [[a84afae](https://github.com/derniercri/packages/commit/a84afaeed13dd9c7421e1fff83611708d52112b5)]
+  - `lerna-gitmoji-changelog`
+
+### Added
+
+- ✨ Convert json to ts [[251e238](https://github.com/derniercri/packages/commit/251e23848316652cdb90ffd8270e411dc4ae8e63)]
+  - `lerna-gitmoji-changelog`
+- ✨ Add missing script [[f7b27bb](https://github.com/derniercri/packages/commit/f7b27bb85df69c22e1b50d4020b411a1fc79f1c3)]
+  - `lerna-gitmoji-changelog`
+- ✨ First try [[51597fc](https://github.com/derniercri/packages/commit/51597fcc05d22ca3fb5cf6ae057ee2eb9f76e01c)]
+  - `lerna-gitmoji-changelog`
+
 <a name="3.3.4"></a>
 ## 3.3.4 (2020-08-28)
 
