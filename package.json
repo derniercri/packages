@@ -27,6 +27,7 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-typescript": "^7.10.4",
     "@commitlint/cli": "^9.1.2",
+    "@types/jest": "^26.0.10",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
     "commitlint-config-gitmoji": "dbenfouzari/commitlint-config-gitmoji",
@@ -34,6 +35,7 @@
     "husky": "^4.2.5",
     "jest": "^26.4.2",
     "lerna": "^3.22.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.2"
   }
 }

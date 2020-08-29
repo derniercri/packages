@@ -1,0 +1,29 @@
+{
+  "name": "@derniercri/lerna-gitmoji-changelog",
+  "version": "3.3.4",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derniercri/packages.git",
+    "directory": "packages/lerna-gitmoji-changelog"
+  },
+  "scripts": {
+    "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
+  },
+  "keywords": [],
+  "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derniercri/packages/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "homepage": "https://github.com/derniercri/packages#readme",
+  "dependencies": {
+    "semver": "^7.3.2"
+  },
+  "devDependencies": {
+    "@types/semver": "^7.3.3"
+  }
+}
