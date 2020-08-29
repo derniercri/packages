@@ -2,7 +2,8 @@
 
 yarn lerna version --no-push --force-git-tag
 git stash
-yarn gitmoji-changelog
+# yarn gitmoji-changelog
+yarn generate-changelog
 git stash pop stash@{0}
 git add CHANGELOG.md
 
