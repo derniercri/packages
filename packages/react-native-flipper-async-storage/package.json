@@ -1,6 +1,6 @@
 {
   "name": "@derniercri/react-native-flipper-async-storage",
-  "version": "3.3.6",
+  "version": "3.3.7",
   "description": "A React-Native Flipper plugin that shows AsyncStorage content",
   "repository": {
     "type": "git",

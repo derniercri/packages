@@ -1,5 +1,19 @@
 # Changelog
 
+<a name="v3.3.7"></a>
+## v3.3.7 (2020-09-01)
+
+### Added
+
+- 🎉 Start Flipper plugin [[eb54a93](https://github.com/derniercri/packages/commit/eb54a9353bd3d28a9a5c803a71d9cf5d784db859)]
+  - `flipper-plugin-reactnativeasyncstoragedc`,
+  - `lerna-gitmoji-changelog`,
+  - `react-native-flipper-async-storage`
+- ✅ Fix tests [[5401cef](https://github.com/derniercri/packages/commit/5401cef467f71abde18314c3a125ce1adb422409)]
+  - `lerna-gitmoji-changelog`
+- ✅ Fix tests [[d512fba](https://github.com/derniercri/packages/commit/d512fba3ff7e364a8680e351e053165841776b55)]
+  - `lerna-gitmoji-changelog`
+
 <a name="v3.3.6"></a>
 ## v3.3.6 (2020-08-29)
 
