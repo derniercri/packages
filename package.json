@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "scripts": {
-    "prebuild": "lerna exec --parallel -- rimraf lib",
+    "prebuild": "lerna exec --parallel -- rimraf lib dist",
     "build": "lerna run build",
     "test": "jest",
     "prepare": "yarn build",

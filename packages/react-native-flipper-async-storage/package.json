@@ -1,0 +1,31 @@
+{
+  "name": "@derniercri/react-native-flipper-async-storage",
+  "version": "3.3.6",
+  "description": "A React-Native Flipper plugin that shows AsyncStorage content",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derniercri/packages.git",
+    "directory": "packages/react-native-flipper-async-storage"
+  },
+  "scripts": {
+    "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
+  },
+  "keywords": [],
+  "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derniercri/packages/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "homepage": "https://github.com/derniercri/packages#readme",
+  "devDependencies": {
+    "@react-native-community/async-storage": "^1.12.0",
+    "react-native-flipper": "^0.55.0"
+  },
+  "peerDependencies": {
+    "@react-native-community/async-storage": ">=1.10.0",
+    "react-native-flipper": ">=0.55.0"
+  }
+}

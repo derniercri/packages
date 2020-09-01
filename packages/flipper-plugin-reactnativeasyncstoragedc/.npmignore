@@ -1,0 +1,7 @@
+.log
+.DS_Store
+src
+node_modules
+.npmrc
+.idea
+yarn-error.log

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
+  "name": "@derniercri/flipper-plugin-async-storage",
+  "id": "ReactNativeAsyncStorageDC",
+  "version": "3.3.7",
+  "main": "dist/bundle.js",
+  "flipperBundlerEntry": "src/index.tsx",
+  "license": "MIT",
+  "keywords": [
+    "flipper-plugin"
+  ],
+  "icon": "apps",
+  "title": "Async Storage",
+  "scripts": {
+    "lint": "flipper-pkg lint",
+    "prepack": "flipper-pkg lint && flipper-pkg bundle",
+    "build": "flipper-pkg bundle",
+    "watch": "flipper-pkg bundle --watch"
+  },
+  "peerDependencies": {
+    "flipper": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "^7.8.0",
+    "flipper": "latest",
+    "flipper-pkg": "latest"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
