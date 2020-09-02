@@ -3,10 +3,12 @@ import * as changelog from "./changelog";
 
 import { getShouldWriteChangelog, generateChangelog } from ".";
 
-jest.mock('fs');
+jest.mock("fs");
 
 const originalGetLastTag = git.getLastTag;
 const originalGetLastWrittenTag = changelog.getLastWrittenTag;
+const originalGetLongHash = git.getLongHash;
+const originalGetTagDate = git.getTagDate;
 
 describe("shouldWriteChangelog", () => {
   beforeEach(() => {
@@ -19,6 +21,8 @@ describe("shouldWriteChangelog", () => {
 
   afterEach(() => {
     (git as any).getLastTag = originalGetLastTag;
+    (git as any).getLongHash = originalGetLongHash;
+    (git as any).getTagDate = originalGetTagDate;
     (changelog as any).getLastWrittenTag = originalGetLastWrittenTag;
   });
 
@@ -60,8 +64,11 @@ describe("generateChangelog", () => {
   beforeEach(() => {
     jest.mock("./git");
     (git as any).getLastTag = jest.fn(() => "v3.3.4");
-    (git as any).getFilesInHash = jest.fn(() => ['toto', 'packages/toto']);
-    (git as any).getDiffBetweenTags = jest.fn(() => `ac6fdcd (HEAD -> master, tag: v3.3.4, origin/master) :bookmark: Publish v3.3.4
+    (git as any).getLongHash = jest.fn(() => "ac6fdcd");
+    (git as any).getTagDate = jest.fn(() => "2020-01-02");
+    (git as any).getFilesInHash = jest.fn(() => ["toto", "packages/toto"]);
+    (git as any).getDiffBetweenTags = jest.fn(
+      () => `ac6fdcd (HEAD -> master, tag: v3.3.4, origin/master) :bookmark: Publish v3.3.4
 CHANGELOG.md
 packages/cli-tools/package.json
 packages/react-native-template-derniercri/package.json
@@ -69,7 +76,8 @@ packages/react-native-template-derniercri/package.json
 packages/react-native-template-derniercri/template/_eslintrc.js
 4cbccfc :wrench: Better TypeScript coding
 package.json
-`);
+`
+    );
 
     jest.mock("./changelog");
     (changelog as any).getLastWrittenTag = jest.fn(() => "v3.3.3");
@@ -105,16 +113,17 @@ package.json
     expect(result).toEqual(`# Changelog
 
 <a name="v3.3.4"></a>
-## v3.3.4 (2020-08-28)
+## v3.3.4 (2020-01-02)
 
 ### Added
 
-- ✅ Better tests TODO: Link to Github
+- ✅ Better tests [[2458c93](https://github.com/derniercri/packages/commit/ac6fdcd)]
+  - \`toto\`
 
 ### Changed
 
-- 🔧 Better TypeScript coding TODO: Link to Github
-
+- 🔧 Better TypeScript coding [[4cbccfc](https://github.com/derniercri/packages/commit/ac6fdcd)]
+  - \`toto\`
 
 <a name="3.3.4"></a>
 ## 3.3.4 (2020-08-28)
@@ -136,13 +145,15 @@ package.json
 
 - ✨ Better config [[769147f](https://github.com/derniercri/packages/commit/769147f4960c28f825e346dc5012d1407137a2d4)]
 
-`)
+`);
   });
 
   it("should not generate changelog", () => {
     (git as any).getLastTag = jest.fn(() => "v3.3.3");
     (changelog as any).getLastWrittenTag = jest.fn(() => "v3.3.3");
 
-    expect(() => {generateChangelog()}).toThrowError('Do not have to generate changelog');
+    expect(() => {
+      generateChangelog();
+    }).toThrowError("Do not have to generate changelog");
   });
 });
