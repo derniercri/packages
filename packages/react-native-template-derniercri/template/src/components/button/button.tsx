@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react';
-import { GestureResponderEvent, Text, TouchableOpacity } from 'react-native';
+import React, { useCallback } from 'react'
+import { GestureResponderEvent, Text, TouchableOpacity } from 'react-native'
 
-import buttonStyles from './button.styles';
-import { ButtonProps } from './button.types';
+import buttonStyles from './button.styles'
+import { ButtonProps } from './button.types'
 
 const Button: React.FC<ButtonProps> = ({
   onPress,
@@ -14,12 +14,12 @@ const Button: React.FC<ButtonProps> = ({
   const handlePress = useCallback(
     (event: GestureResponderEvent) => {
       if (disabled) {
-        return null;
+        return null
       }
-      return onPress && onPress(event);
+      return onPress && onPress(event)
     },
     [disabled, onPress],
-  );
+  )
 
   return (
     <TouchableOpacity
@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
         children
       )}
     </TouchableOpacity>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

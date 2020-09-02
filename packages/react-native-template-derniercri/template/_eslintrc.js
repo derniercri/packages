@@ -1,12 +1,15 @@
 module.exports = {
   root: true,
-  extends: ["@derniercri/react-native"],
+  extends: ['@derniercri/react-native'],
+  rules: {
+    'react-native/no-raw-text': ['error', { skip: ['Button'] }],
+  },
   overrides: [
     {
-      files: ["*.test.tsx", "*.stories.tsx"],
+      files: ['*.test.tsx', '*.stories.tsx'],
       rules: {
-        "@derniercri/i18n/no-child-string": "off",
+        'react-native/no-raw-text': 'off',
       },
     },
   ],
-};
+}

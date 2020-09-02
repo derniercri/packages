@@ -1,20 +1,22 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native'
+
+import colors from '../../styles/_colors'
 
 const buttonStyles = StyleSheet.create({
+  disabled: {
+    backgroundColor: colors.grayLight,
+  },
   text: {
     textTransform: 'uppercase',
   },
-  disabled: {
-    backgroundColor: '#7B8794',
-  },
   wrapper: {
     alignItems: 'center',
-    backgroundColor: '#87FDF6',
+    backgroundColor: colors.blue,
     borderRadius: 40,
     display: 'flex',
     justifyContent: 'center',
     padding: 20,
   },
-});
+})
 
-export default buttonStyles;
+export default buttonStyles

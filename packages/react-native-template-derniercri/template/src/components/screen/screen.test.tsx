@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react-native'
 import React from 'react'
 
-import Button from './button'
+import Screen from './screen'
 
 it('renders correctly', () => {
-  render(<Button>Hello, World !</Button>)
+  render(<Screen />)
 })
