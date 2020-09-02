@@ -1,6 +1,6 @@
 {
   "name": "@derniercri/react-native-template-derniercri",
-  "version": "3.3.4",
+  "version": "3.4.0",
   "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
   "files": [
     "template",

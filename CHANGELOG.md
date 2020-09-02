@@ -1,5 +1,15 @@
 # Changelog
 
+<a name="v3.4.0"></a>
+## v3.4.0 (2020-09-02)
+
+### Added
+
+- ✨ Add Redux (and fix lint) on template [[9629643](https://github.com/derniercri/packages/commit/9629643010f67b747f4fbe8ee93fdac1d6575048)]
+  - `react-native-template-derniercri`
+- ✅ Fix tests [[215afdb](https://github.com/derniercri/packages/commit/215afdbe63d97ac38da598a8239d6426a4eddf67)]
+  - `lerna-gitmoji-changelog`
+
 <a name="v3.3.6"></a>
 ## v3.3.6 (2020-08-29)
 
