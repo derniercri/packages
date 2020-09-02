@@ -15,8 +15,3 @@ updates:
     open-pull-requests-limit: 10
     assignees:
       - "dbenfouzari"
-    ignore:
-      # Since @typescript-eslint/estree is not yet compatible with current TypeScript version
-      # Check often !
-      - dependency-name: "typescript"
-        versions: ["4.x"]
