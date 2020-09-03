@@ -1,7 +1,4 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: Native Template
 
 on:
   push:
@@ -10,20 +7,33 @@ on:
     branches: [master]
 
 jobs:
-  build:
+  init-template:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          path: "dcri-packages"
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2.1.1
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Get pwd
+        run: pwd -P
+
+      - name: Get GITHUB_WORKSPACE
+        run: echo $GITHUB_WORKSPACE
+
+      - name: Create project
+        run: cd $GITHUB_WORKSPACE && npx react-native init NativeProject --template $GITHUB_WORKSPACE/packages/react-native-template-derniercri
+        env:
+          NODE_ENV: development
 
       - name: Get Yarn cache
         id: yarn-cache-dir-path
@@ -38,9 +48,12 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: cd $GITHUB_WORKSPACE/NativeProject && yarn install --production=false
         env:
           CI: true
 
-      - run: yarn build
-      - run: yarn test
+      - name: Lint
+        run: cd $GITHUB_WORKSPACE/NativeProject && yarn lint
+
+      - name: Test
+        run: cd $GITHUB_WORKSPACE/NativeProject && yarn test
