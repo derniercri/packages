@@ -27,19 +27,10 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: "@derniercri"
 
-      - name: Get pwd
-        run: pwd -P
-
-      - name: Get GITHUB_WORKSPACE
-        run: echo $GITHUB_WORKSPACE
-
       - name: Create project
         run: cd $GITHUB_WORKSPACE && NODE_ENV=development npx react-native init NativeProject --template $GITHUB_WORKSPACE/dcri-packages/packages/react-native-template-derniercri
         env:
           NODE_ENV: development
-
-      - name: LS
-        run: ls -lah $GITHUB_WORKSPACE
 
       - name: Get Yarn cache
         id: yarn-cache-dir-path

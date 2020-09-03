@@ -10,13 +10,7 @@
 
 import React from 'react'
 import { ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native'
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen'
+import { Header, Colors } from 'react-native/Libraries/NewAppScreen'
 
 import Screen from '../components/screen'
 import env from '../modules/env'
@@ -40,32 +34,12 @@ const Home = () => (
         <View style={styles.body}>
           <View style={styles.sectionContainer}>
             <Text style={styles.sectionTitle}>
-              Step One {env.IF_YOU_HAPPY_CLAP_YOUR_HANDS}
+              Congratulations ! {env.IF_YOU_HAPPY_CLAP_YOUR_HANDS}
             </Text>
             <Text style={styles.sectionDescription}>
-              Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-              screen and then come back to see your edits.
+              You made HelloWorld become real!
             </Text>
           </View>
-          <View style={styles.sectionContainer}>
-            <Text style={styles.sectionTitle}>See Your Changes</Text>
-            <Text style={styles.sectionDescription}>
-              <ReloadInstructions />
-            </Text>
-          </View>
-          <View style={styles.sectionContainer}>
-            <Text style={styles.sectionTitle}>Debug</Text>
-            <Text style={styles.sectionDescription}>
-              <DebugInstructions />
-            </Text>
-          </View>
-          <View style={styles.sectionContainer}>
-            <Text style={styles.sectionTitle}>Learn More</Text>
-            <Text style={styles.sectionDescription}>
-              Read the docs to discover what to do next:
-            </Text>
-          </View>
-          <LearnMoreLinks />
         </View>
       </ScrollView>
     </Screen>
@@ -87,9 +61,6 @@ const styles = StyleSheet.create({
     padding: 4,
     paddingRight: 12,
     textAlign: 'right',
-  },
-  highlight: {
-    fontWeight: '700',
   },
   scrollView: {
     backgroundColor: Colors.lighter,
