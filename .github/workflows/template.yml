@@ -23,15 +23,12 @@ jobs:
         uses: actions/setup-node@v2.1.1
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: Get pwd
-        run: pwd -P
-
-      - name: Get GITHUB_WORKSPACE
-        run: echo $GITHUB_WORKSPACE
+          always-auth: true
+          registry-url: https://npm.pkg.github.com
+          scope: "@derniercri"
 
       - name: Create project
-        run: cd $GITHUB_WORKSPACE && npx react-native init NativeProject --template $GITHUB_WORKSPACE/packages/react-native-template-derniercri
+        run: cd $GITHUB_WORKSPACE && NODE_ENV=development npx react-native init NativeProject --template $GITHUB_WORKSPACE/dcri-packages/packages/react-native-template-derniercri
         env:
           NODE_ENV: development
 
@@ -51,6 +48,7 @@ jobs:
         run: cd $GITHUB_WORKSPACE/NativeProject && yarn install --production=false
         env:
           CI: true
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: Lint
         run: cd $GITHUB_WORKSPACE/NativeProject && yarn lint
