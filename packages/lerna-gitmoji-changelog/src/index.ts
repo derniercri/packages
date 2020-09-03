@@ -25,11 +25,14 @@ export const generateChangelog = () => {
     const changelogContent = changelog.loadChangelog();
 
     const lastTag = git.getLastTag();
-    const lastWrittenTag = changelog.getLastWrittenTag(changelogContent);
+    let lastWrittenTag = changelog.getLastWrittenTag(changelogContent);
 
     if (!lastWrittenTag) return lastWrittenTag;
+    if (!lastWrittenTag.startsWith('v')) {
+      lastWrittenTag = `v${lastWrittenTag}`
+    }
 
-    const log = git.getDiffBetweenTags(`v${lastWrittenTag}`, lastTag || 'HEAD');
+    const log = git.getDiffBetweenTags(lastWrittenTag, lastTag || 'HEAD');
     const parsed = parser.parseLog(log);
     const markdown = parser.parsedLogToMarkdown(lastTag, parsed);
 

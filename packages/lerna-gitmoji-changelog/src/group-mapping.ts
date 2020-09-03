@@ -11,6 +11,8 @@ export const groups: Groups = {
   added: {
     label: "Added",
     emojis: [
+      "rocket",
+      "hammer",
       "sparkles",
       "tada",
       "white_check_mark",
