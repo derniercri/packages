@@ -28,17 +28,17 @@ export const generateChangelog = () => {
     let lastWrittenTag = changelog.getLastWrittenTag(changelogContent);
 
     if (!lastWrittenTag) return lastWrittenTag;
-    if (!lastWrittenTag.startsWith('v')) {
-      lastWrittenTag = `v${lastWrittenTag}`
+    if (!lastWrittenTag.startsWith("v")) {
+      lastWrittenTag = `v${lastWrittenTag}`;
     }
 
-    const log = git.getDiffBetweenTags(lastWrittenTag, lastTag || 'HEAD');
+    const log = git.getDiffBetweenTags(lastWrittenTag, lastTag || "HEAD");
     const parsed = parser.parseLog(log);
     const markdown = parser.parsedLogToMarkdown(lastTag, parsed);
 
     writeChangelog(markdown);
     return markdown;
   } else {
-    throw new Error('Do not have to generate changelog');
+    throw new Error("Do not have to generate changelog");
   }
 };

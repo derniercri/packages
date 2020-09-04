@@ -59,14 +59,12 @@ storiesOf('${componentName}', module).add('default', () => (
 //#endregion
 
 const toCamelCase = (str: string) => {
-  const match = str
-    .match(/[a-z]+/g);
+  const match = str.match(/[a-z]+/g);
 
-  if (!match) throw new Error('String is invalid.');
+  if (!match) throw new Error("String is invalid.");
 
-  return match.map(word => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase()).join("");
-}
-
+  return match.map((word) => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase()).join("");
+};
 
 const toKebabCase = (str: string) =>
   str
@@ -100,10 +98,7 @@ inquirer
       fs.mkdirSync(fullDestination);
     }
 
-    fs.writeFileSync(
-      `${fullDestination}/index.ts`,
-      generateIndexFile(folderName)
-    );
+    fs.writeFileSync(`${fullDestination}/index.ts`, generateIndexFile(folderName));
     fs.writeFileSync(
       `${fullDestination}/${folderName}.tsx`,
       generateComponentFile(finalComponentName)

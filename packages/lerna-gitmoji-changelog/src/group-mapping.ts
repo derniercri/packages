@@ -1,4 +1,4 @@
-import gitmojis from './gitmojis';
+import gitmojis from "./gitmojis";
 
 type Groups = {
   [key: string]: {
@@ -92,4 +92,5 @@ export const getGroupForGitmoji = (gitmoji: string) => {
 
 export const getLabelForGroup = (group: keyof typeof groups) => groups[group].label;
 
-export const getGitmojiFromName = (gitmojiCode: string) => gitmojis.gitmojis.find(gmj => gmj.code === gitmojiCode)!.emoji;
+export const getGitmojiFromName = (gitmojiCode: string) =>
+  gitmojis.gitmojis.find((gmj) => gmj.code === gitmojiCode)!.emoji;

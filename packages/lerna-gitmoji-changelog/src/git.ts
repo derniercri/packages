@@ -38,4 +38,4 @@ export const getRemoteAtHttps = () => {
   return remote;
 };
 
-export const getLongHash = (hash: string) => exec(`git rev-parse ${hash}`).replace('\n', '')
+export const getLongHash = (hash: string) => exec(`git rev-parse ${hash}`).replace("\n", "");

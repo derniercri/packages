@@ -3,11 +3,7 @@
  */
 
 module.exports = {
-  extends: [
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
-  ],
+  extends: ["plugin:import/errors", "plugin:import/warnings", "plugin:import/typescript"],
   rules: {
     //#region Let TypeScript do its things
     "import/no-extraneous-dependencies": "off",

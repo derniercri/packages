@@ -35,8 +35,8 @@ export const parseLog = (log: string) => {
 };
 
 export const getPackageFromFile = (fileName: string) => {
-  if (!fileName.startsWith('packages/')) return null;
-  return fileName.split('/')[1];
+  if (!fileName.startsWith("packages/")) return null;
+  return fileName.split("/")[1];
 };
 
 export const parsedLogToMarkdown = (tag: string, parsedLog: ParsedCommit[]) => {
@@ -69,8 +69,10 @@ export const parsedLogToMarkdown = (tag: string, parsedLog: ParsedCommit[]) => {
         final += `
 - ${groupMapping.getGitmojiFromName(gitmoji)} ${commit} [[${hash}](${remote}/commit/${longHash})]`;
 
-        final += uniqPackages.map(pf => `
-  - \`${pf}\``)
+        final += uniqPackages.map(
+          (pf) => `
+  - \`${pf}\``
+        );
       });
 
       return final;

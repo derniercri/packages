@@ -312,9 +312,7 @@ module.exports = {
               : node.value.trim();
 
           const formattedErrorValue =
-            errorValue.length > 0
-              ? `Raw text \`${errorValue}\``
-              : "Whitespace(s)";
+            errorValue.length > 0 ? `Raw text \`${errorValue}\`` : "Whitespace(s)";
 
           context.report({
             node,
@@ -401,11 +399,7 @@ module.exports = {
             currentNode.parent.openingElement &&
             currentNode.parent.openingElement.name
           ) {
-            if (
-              ignoredComponents.includes(
-                currentNode.parent.openingElement.name.name
-              )
-            ) {
+            if (ignoredComponents.includes(currentNode.parent.openingElement.name.name)) {
               return true;
             }
             currentNode = currentNode.parent;
@@ -435,8 +429,7 @@ module.exports = {
 
         const { esTreeNodeToTSNodeMap, program } = parserServices;
         let typeChecker;
-        if (program && esTreeNodeToTSNodeMap)
-          typeChecker = program.getTypeChecker();
+        if (program && esTreeNodeToTSNodeMap) typeChecker = program.getTypeChecker();
 
         function validateLiteral(node) {
           // visited and passed linting
@@ -482,8 +475,7 @@ module.exports = {
         }
 
         // onlyAttribute would turn on markOnly
-        const markupOnly =
-          option && (option.markupOnly || !!option.onlyAttribute);
+        const markupOnly = option && (option.markupOnly || !!option.onlyAttribute);
 
         const scriptVisitor = {
           //
@@ -582,10 +574,7 @@ module.exports = {
           "ClassProperty > Literal"(node) {
             const { parent } = node;
 
-            if (
-              parent.key &&
-              ignoredClassProperties.includes(parent.key.name)
-            ) {
+            if (parent.key && ignoredClassProperties.includes(parent.key.name)) {
               visited.add(node);
             }
           },
