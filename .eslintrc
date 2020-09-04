@@ -7,8 +7,10 @@
   "parserOptions": {
     "sourceType": "module"
   },
+  "extends": ["plugin:prettier/recommended"],
   "overrides": [
     {
+      "extends": ["plugin:prettier/recommended"],
       "files": ["*.ts", "*.tsx"],
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint/eslint-plugin"]

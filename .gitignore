@@ -4,3 +4,4 @@ lib
 node_modules
 .npmrc
 .idea/
+yarn-error.log
