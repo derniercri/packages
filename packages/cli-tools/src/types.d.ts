@@ -1,7 +1,14 @@
-export type SetupFunction = () => {
+type File = {
+  path: string;
+  content: string;
+};
+
+type SetupFunctionReturn = {
   packages: {
     dependencies: string[];
     devDependencies: string[];
   };
-  files: string[];
+  files: File[];
 };
+
+export type SetupFunction = (() => SetupFunctionReturn) | (() => Promise<SetupFunctionReturn>);
