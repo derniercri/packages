@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const inquirer = require("inquirer");
-const yargs = require("yargs");
 const fs = require("fs");
 
 inquirer.registerPrompt("fuzzypath", require("inquirer-fuzzy-path"));
@@ -72,13 +71,6 @@ const toKebabCase = (str) =>
     .replace(/([a-z])([A-Z])/g, "$1-$2")
     .replace(/\s+/g, "-")
     .toLowerCase();
-
-const options = yargs.usage("Usage: -n <name>").option("n", {
-  alias: "name",
-  describe: "The component name",
-  type: "string",
-  demandOption: false,
-}).argv;
 
 inquirer
   .prompt([
