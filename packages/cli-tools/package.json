@@ -9,6 +9,9 @@
   },
   "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
+  },
   "bugs": {
     "url": "https://github.com/derniercri/packages/issues"
   },
@@ -18,9 +21,9 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "bin": {
-    "generate-component": "scripts/generate-component.js",
-    "generate-native-component": "scripts/generate-native-component.js",
-    "generate-react-component": "scripts/generate-react-component.js"
+    "generate-component": "lib/generate-component.js",
+    "generate-native-component": "lib/generate-native-component.js",
+    "generate-react-component": "lib/generate-react-component.js"
   },
   "dependencies": {
     "inquirer": "^7.3.3",
