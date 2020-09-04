@@ -1,40 +1,42 @@
 #!/usr/bin/env node
 
-const inquirer = require("inquirer");
-const fs = require("fs");
+import inquirer from "inquirer";
+import fs from "fs";
 
 inquirer.registerPrompt("fuzzypath", require("inquirer-fuzzy-path"));
 
 //#region Templates
-const generateIndexFile = (fileName) => {
+const generateIndexFile = (fileName: string) => {
   return `export { default } from './${fileName}';
 `;
 };
 
-const generateComponentFile = (componentName) => {
+const generateComponentFile = (componentName: string, fileName: string) => {
   return `import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import styles from './${fileName}.module.scss';
 
 interface ${componentName}Props {}
 
 const ${componentName}: React.FC<${componentName}Props> = () => (
-  <View style={styles.wrapper}>
-    <Text>Hello World</Text>
-  </View>
+  <div className={styles.wrapper}>Hello World</div>
 );
-
-const styles = StyleSheet.create({
-  wrapper: {
-    backgroundColor: '#fff',
-  },
-});
 
 export default ${componentName};
 `;
 };
 
-const generateTestFile = (componentName, fileName) => {
-  return `import { render } from '@testing-library/react-native';
+const generateStyleFile = () => {
+  return `@import "src/styles/colors";
+
+.wrapper {
+  background-color: $white;
+}
+`;
+};
+
+const generateTestFile = (componentName: string, fileName: string) => {
+  return `import { render } from '@testing-library/react';
 import React from 'react';
 
 import ${componentName} from './${fileName}';
@@ -45,28 +47,32 @@ it('renders correctly', () => {
 `;
 };
 
-const generateStoryFile = (componentName, fileName) => {
-  return `import { storiesOf } from '@storybook/react-native';
-import React from 'react';
+const generateStoryFile = (componentName: string, fileName: string) => {
+  return `import React from 'react';
 
-import ${componentName} from './';
+import ${componentName} from './${fileName}';
 
-storiesOf('${componentName}', module).add('default', () => (
-  <${componentName} />
-));
+export default {
+  title: 'Components/${componentName}',
+  component: ${componentName},
+};
+
+export const Default = () => <${componentName} />;
 `;
 };
 //#endregion
 
-const toCamelCase = (str) =>
-  str
-    .match(/[a-z]+/g)
-    .map(function (word) {
-      return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
-    })
-    .join("");
+const toCamelCase = (str: string) => {
+  const match = str
+    .match(/[a-z]+/g);
 
-const toKebabCase = (str) =>
+  if (!match) throw new Error('String is invalid.');
+
+  return match.map(word => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase()).join("");
+}
+
+
+const toKebabCase = (str: string) =>
   str
     .replace(/([a-z])([A-Z])/g, "$1-$2")
     .replace(/\s+/g, "-")
@@ -81,7 +87,7 @@ inquirer
     },
     {
       type: "fuzzypath",
-      excludePath: (nodePath) => nodePath.startsWith("node_modules"),
+      excludePath: (nodePath: string) => nodePath.startsWith("node_modules"),
       itemType: "directory",
       name: "destination",
       message: "Select a target directory",
@@ -98,6 +104,10 @@ inquirer
       fs.mkdirSync(fullDestination);
     }
 
+    fs.writeFileSync(
+      `${fullDestination}/${folderName}.module.scss`,
+      generateStyleFile()
+    );
     fs.writeFileSync(
       `${fullDestination}/index.ts`,
       generateIndexFile(folderName)

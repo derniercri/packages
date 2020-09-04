@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 
-const inquirer = require("inquirer");
-const fs = require("fs");
+import inquirer from "inquirer";
+import fs from "fs";
 
 inquirer.registerPrompt("fuzzypath", require("inquirer-fuzzy-path"));
 
 //#region Templates
-const generateIndexFile = (fileName) => {
+const generateIndexFile = (fileName: string) => {
   return `export { default } from './${fileName}';
 `;
 };
 
 //#region Component file
-const generateNativeComponentFile = (componentName) => {
+const generateNativeComponentFile = (componentName: string) => {
   return `import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -34,7 +34,7 @@ export default ${componentName};
 `;
 };
 
-const generateReactComponentFile = (componentName, fileName) => {
+const generateReactComponentFile = (componentName: string, fileName: string) => {
   return `import React from 'react';
 
 import styles from './${fileName}.module.scss';
@@ -49,7 +49,7 @@ export default ${componentName};
 `;
 };
 
-const generateComponentFile = (componentName, fileName, isNative) => {
+const generateComponentFile = (componentName: string, fileName: string, isNative: boolean) => {
   if (isNative) {
     return generateNativeComponentFile(componentName);
   }
@@ -57,7 +57,7 @@ const generateComponentFile = (componentName, fileName, isNative) => {
 };
 //#endregion
 
-const generateStyleFile = (componentName, fileName) => {
+const generateStyleFile = () => {
   return `@import "src/styles/colors";
 
 .wrapper {
@@ -66,7 +66,7 @@ const generateStyleFile = (componentName, fileName) => {
 `;
 };
 
-const generateTestFile = (componentName, fileName) => {
+const generateTestFile = (componentName: string, fileName: string) => {
   return `import { render } from '@testing-library/react-native';
 import React from 'react';
 
@@ -79,7 +79,7 @@ it('renders correctly', () => {
 };
 
 //#region Story file
-const generateReactStoryFile = (componentName, fileName) => {
+const generateReactStoryFile = (componentName: string, fileName: string) => {
   return `import React from 'react';
 
 import ${componentName} from './${fileName}';
@@ -93,7 +93,7 @@ export const Default = () => <${componentName} />;
 `;
 };
 
-const generateNativeStoryFile = (componentName, fileName) => {
+const generateNativeStoryFile = (componentName: string) => {
   return `import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 
@@ -105,24 +105,26 @@ storiesOf('${componentName}', module).add('default', () => (
 `;
 };
 
-const generateStoryFile = (componentName, fileName, isNative) => {
+const generateStoryFile = (componentName: string, fileName: string, isNative: boolean) => {
   if (isNative) {
-    return generateNativeStoryFile(componentName, fileName);
+    return generateNativeStoryFile(componentName);
   }
   return generateReactStoryFile(componentName, fileName);
 };
 //#endregion
 //#endregion
 
-const toCamelCase = (str) =>
-  str
-    .match(/[a-z]+/g)
-    .map(function (word) {
-      return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
-    })
-    .join("");
+const toCamelCase = (str: string) => {
+  const match = str
+    .match(/[a-z]+/g);
 
-const toKebabCase = (str) =>
+  if (!match) throw new Error('String is invalid.');
+
+  return match.map(word => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase()).join("");
+}
+
+
+const toKebabCase = (str: string) =>
   str
     .replace(/([a-z])([A-Z])/g, "$1-$2")
     .replace(/\s+/g, "-")
@@ -143,7 +145,7 @@ inquirer
     },
     {
       type: "fuzzypath",
-      excludePath: (nodePath) => nodePath.startsWith("node_modules"),
+      excludePath: (nodePath: string) => nodePath.startsWith("node_modules"),
       itemType: "directory",
       name: "destination",
       message: "Select a target directory",
@@ -164,7 +166,7 @@ inquirer
     if (!IS_NATIVE) {
       fs.writeFileSync(
         `${fullDestination}/${folderName}.module.scss`,
-        generateStyleFile(finalComponentName, folderName)
+        generateStyleFile()
       );
     }
 
