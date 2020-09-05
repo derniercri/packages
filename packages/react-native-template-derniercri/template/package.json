@@ -47,7 +47,7 @@
     "@typescript-eslint/parser": "^4.0.1",
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
-    "eslint": "^6.5.1",
+    "eslint": "^7.8.1",
     "jest": "^26.4.2",
     "metro-react-native-babel-preset": "^0.63.0",
     "prettier": "^2.0.4",
