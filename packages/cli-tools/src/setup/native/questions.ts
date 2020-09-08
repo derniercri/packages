@@ -3,6 +3,7 @@ import mergeWith from "lodash.mergewith";
 
 import { SetupFunctionReturn } from "../../types";
 import setupRedux from "./redux";
+import setupI18n from "./i18n";
 
 function customizer(objValue: unknown, srcValue: unknown) {
   if (Array.isArray(objValue)) {
@@ -41,7 +42,11 @@ const askQuestions = async (): Promise<SetupFunctionReturn> => {
     packages = mergeWith(packages, { devDependencies: ["react-native-flipper"] }, customizer);
   }
 
-  // if (libs.includes("i18n")) devDependencies.push("@derniercri/eslint-plugin-i18n");
+  if (libs.includes("i18n")) {
+    const result = await setupI18n();
+    packages = mergeWith(packages, result.packages, customizer);
+    files = mergeWith(files, result.files, customizer);
+  }
 
   return { packages, files };
 };

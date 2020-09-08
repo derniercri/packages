@@ -2,7 +2,7 @@ import { SetupFunctionReturn } from "../../../types";
 import generateIndex from "./template";
 import generateReducer from "./template/reducer";
 import generateFeature from "./template/features/counter";
-import generateFeatureTest from "./template/features/counter.test";
+import generateFeatureTest from "./template/features/counter-test";
 
 interface Options {
   hasFlipper: boolean;
