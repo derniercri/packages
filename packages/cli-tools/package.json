@@ -24,15 +24,19 @@
     "generate-component": "lib/generate-component.js",
     "generate-native-component": "lib/generate-native-component.js",
     "generate-react-component": "lib/generate-react-component.js",
-    "setup": "lib/setup.js"
+    "setup": "lib/setup/index.js"
   },
   "dependencies": {
     "chalk": "^4.1.0",
     "inquirer": "^7.3.3",
     "inquirer-fuzzy-path": "^2.3.0",
+    "lodash.merge": "^4.6.2",
+    "lodash.mergewith": "^4.6.2",
     "log-symbols": "^4.0.0"
   },
   "devDependencies": {
-    "@types/inquirer": "^7.3.1"
+    "@types/inquirer": "^7.3.1",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/lodash.mergewith": "^4.6.6"
   }
 }

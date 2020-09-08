@@ -1,14 +1,13 @@
 type File = {
-  path: string;
+  dir: string;
+  fileName: string;
   content: string;
 };
 
-type SetupFunctionReturn = {
+export type SetupFunctionReturn = {
   packages: {
     dependencies: string[];
     devDependencies: string[];
   };
   files: File[];
 };
-
-export type SetupFunction = (() => SetupFunctionReturn) | (() => Promise<SetupFunctionReturn>);
