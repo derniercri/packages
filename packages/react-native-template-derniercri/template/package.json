@@ -43,7 +43,7 @@
     "@types/jest": "^26.0.13",
     "@types/react-native": "^0.63.2",
     "@types/react-test-renderer": "^16.9.2",
-    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.0.1",
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
