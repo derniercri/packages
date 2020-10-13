@@ -1,5 +1,58 @@
 # Changelog
 
+<a name="v3.4.2"></a>
+## v3.4.2 (2020-10-13)
+
+### Changed
+
+- ⬆️ Bump jest from 26.5.2 to 26.5.3 (#54) [[dae9fcb](https://github.com/derniercri/packages/commit/dae9fcba78188e28aa27310dcab5f6d80ba8715a)]
+- ⬆️ Bump eslint from 7.10.0 to 7.11.0 (#53) [[3ba5552](https://github.com/derniercri/packages/commit/3ba5552216074c9a62a2a24a3a5bda63d898b069)]
+  - `eslint-plugin-i18n`
+- ⬆️ Bump jest from 26.5.0 to 26.5.2 (#52) [[f3c09ae](https://github.com/derniercri/packages/commit/f3c09aed13dba522a658667528376154406491b7)]
+- ⬆️ Bump jest from 26.4.2 to 26.5.0 (#50) [[f095711](https://github.com/derniercri/packages/commit/f0957114e128e63f96ab606b7fa0fe458ed27fa0)]
+- ⬆️ Bump actions/setup-node from v2.1.1 to v2.1.2 (#49) [[fdfc9f7](https://github.com/derniercri/packages/commit/fdfc9f746954daa9f54bfa7422fe633a31cf4472)]
+- ⬆️ Bump react-native (#48) [[1cc8ac5](https://github.com/derniercri/packages/commit/1cc8ac556f9300b5f5d69a3eb401e3cec0119dc6)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump eslint-plugin-import from 2.22.0 to 2.22.1 (#44) [[f6bf329](https://github.com/derniercri/packages/commit/f6bf32965bccf4344bf8ae819487ddc577171ed1)]
+  - `eslint-config-react-native`
+- ⬆️ Bump eslint-config-prettier from 6.11.0 to 6.12.0 (#45) [[62f540c](https://github.com/derniercri/packages/commit/62f540cbfcded3f95bf3416a015c70680da44820)]
+- ⬆️ Bump eslint from 7.9.0 to 7.10.0 (#46) [[daeeb8e](https://github.com/derniercri/packages/commit/daeeb8ea133a10244756f603671bc60a7d82313f)]
+  - `eslint-plugin-i18n`
+- ⬆️ Bump typescript from 4.0.2 to 4.0.3 (#41) [[145857c](https://github.com/derniercri/packages/commit/145857c1641d7b66f8f4230d1965c16317381f1c)]
+  - `eslint-config-react-native`,
+  - `eslint-plugin-i18n`
+- ⬆️ Bump @types/jest from 26.0.13 to 26.0.14 (#40) [[0855552](https://github.com/derniercri/packages/commit/085555275b07b8b9d4df4891aa2ed823342c22be)]
+- ⬆️ Bump @types/semver from 7.3.3 to 7.3.4 (#38) [[d7d8648](https://github.com/derniercri/packages/commit/d7d8648879858d090366d1f11f45ba59c33ba0ea)]
+- ⬆️ Bump eslint from 7.8.1 to 7.9.0 (#36) [[b4e3d44](https://github.com/derniercri/packages/commit/b4e3d446730e9381b82ca959cd26782857e67760)]
+  - `eslint-plugin-i18n`
+- ⬆️ Bump @commitlint/cli from 9.1.2 to 11.0.0 (#37) [[55ac83f](https://github.com/derniercri/packages/commit/55ac83f48fbbd78073f7e43e0f20ec82fc020154)]
+- ⬆️ Bump husky from 4.2.5 to 4.3.0 (#31) [[8737e33](https://github.com/derniercri/packages/commit/8737e33ba80ddf56969e3be0d7b2b1a55a153c7c)]
+- ⬆️ Bump eslint (#27) [[4cb4c2f](https://github.com/derniercri/packages/commit/4cb4c2ffb7bbc2e7caf594b24bd6a5fc869fa116)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump @react-native-community/eslint-config (#26) [[9345ef7](https://github.com/derniercri/packages/commit/9345ef7ac09c1817e2d867fdc926fbbbf890d814)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump @babel/core from 7.11.5 to 7.11.6 (#25) [[02baa93](https://github.com/derniercri/packages/commit/02baa9387ad7b72421d44424e574a9039b77a959)]
+- ⬆️ Bump @babel/cli from 7.11.5 to 7.11.6 (#24) [[ea41a75](https://github.com/derniercri/packages/commit/ea41a7515adeba64d46f6edb6c335f983ec729d3)]
+- ⬆️ Bump jest (#23) [[ae3ceb4](https://github.com/derniercri/packages/commit/ae3ceb4710998795c2cce0b8216766c421c1ce50)]
+  - `react-native-template-derniercri`
+- 🚨 Ran yarn lint [[d0c68d0](https://github.com/derniercri/packages/commit/d0c68d02b63105abed0297061d1e7209a0d994b9)]
+  - `cli-tools`,
+  - `eslint-config-react-native`,
+  - `eslint-plugin-i18n`,
+  - `lerna-gitmoji-changelog`
+- 🎨 Add ESLint/Prettier [[148a7d6](https://github.com/derniercri/packages/commit/148a7d6d0463e45feac30bc55a19804c33c7d508)]
+  - `eslint-config-react-native`
+- 🎨 Scripts are now wrote in TS [[d2f2b4a](https://github.com/derniercri/packages/commit/d2f2b4ae2137132cc6e4dfff8289abcc97e77e5e)]
+  - `cli-tools`
+- 🎨 Changed source format [[30f74df](https://github.com/derniercri/packages/commit/30f74df8cb5fabd99b97efc5b1158fd9deb6edb2)]
+  - `cli-tools`
+- 🔧 Update bug report template [[9c9abe5](https://github.com/derniercri/packages/commit/9c9abe5ac4d85294c06be7fb055a7b84e076e520)]
+
+### Removed
+
+- 🔥 Remove useless code [[4cacb90](https://github.com/derniercri/packages/commit/4cacb900dfbb8d13aacb2eaa29e1c55263eeb9c6)]
+  - `cli-tools`
+
 <a name="v3.4.1"></a>
 ## v3.4.1 (2020-09-03)
 
