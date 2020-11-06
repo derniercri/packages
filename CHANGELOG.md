@@ -1,5 +1,53 @@
 # Changelog
 
+<a name="v3.5.0"></a>
+## v3.5.0 (2020-11-06)
+
+### Changed
+
+- ⬆️ Bump metro-react-native-babel-preset (#91) [[edacfbf](https://github.com/derniercri/packages/commit/edacfbf48bf0d25be1de26b72a71530fbdbfa34b)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump jest from 26.6.2 to 26.6.3 (#90) [[8db8539](https://github.com/derniercri/packages/commit/8db85393635899ce6f6fee2a1c4df489460ff318)]
+- ⬆️ Bump jest from 26.6.1 to 26.6.2 (#88) [[52adc30](https://github.com/derniercri/packages/commit/52adc30d1519a4bf1de9c4ca601972c222e30553)]
+- ⬆️ Bump typescript from 4.0.3 to 4.0.5 (#84) [[89ea7b7](https://github.com/derniercri/packages/commit/89ea7b77dcf55fa1e8ed8d7e49de4ae9e4fc0f96)]
+  - `eslint-config-react-native`,
+  - `eslint-plugin-i18n`
+- ⬆️ Bump jest from 26.6.0 to 26.6.1 (#82) [[96c0919](https://github.com/derniercri/packages/commit/96c09193ce03639bc0a9180673c689e3b3b437a1)]
+- ⬆️ Bump eslint from 7.11.0 to 7.12.1 (#85) [[707398c](https://github.com/derniercri/packages/commit/707398cdf6a05c7eab5942f2059bd7c737e1112a)]
+  - `eslint-plugin-i18n`
+- ⬆️ Bump eslint-config-prettier from 6.14.0 to 6.15.0 (#87) [[0687825](https://github.com/derniercri/packages/commit/0687825495a8aecf6e19ca1f055cd6eb64b3fbd4)]
+- ⬆️ Bump react (#81) [[db41efb](https://github.com/derniercri/packages/commit/db41efbf410e14067d6be461c75840e9c4f5241c)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump react from 17.0.0 to 17.0.1 (#79) [[a8f84d6](https://github.com/derniercri/packages/commit/a8f84d623fc1dc07cddf59f470bfd68022d3c0c7)]
+  - `eslint-config-react-native`
+- ⬆️ Bump eslint-config-prettier from 6.13.0 to 6.14.0 (#78) [[e07b8d9](https://github.com/derniercri/packages/commit/e07b8d9787d8cf6a8737d2a4855c149d4405ff08)]
+- ⬆️ Bump react from 16.14.0 to 17.0.0 (#72) [[aa497ef](https://github.com/derniercri/packages/commit/aa497efb663d7cb21eca9cadc9045eb4880940c8)]
+  - `eslint-config-react-native`
+- ⬆️ Bump react-is (#71) [[6126829](https://github.com/derniercri/packages/commit/6126829ce8dbb5f4084e603f17730cea98f4bff9)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump react-dom (#74) [[d5acb43](https://github.com/derniercri/packages/commit/d5acb4390d1dab24787e68acd55a94b9089b8896)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump react (#76) [[40f8117](https://github.com/derniercri/packages/commit/40f811781fb8e57475a1be25c5063f4e851a86e3)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump @types/jest from 26.0.14 to 26.0.15 (#73) [[f6171e5](https://github.com/derniercri/packages/commit/f6171e5401734038ba3f20939f44c0aadb3e5ff4)]
+- ⬆️ Bump jest from 26.5.3 to 26.6.0 (#69) [[21266d9](https://github.com/derniercri/packages/commit/21266d993e8e260c9cee4856337bd1a74e166722)]
+- ⬆️ Bump eslint-config-prettier from 6.12.0 to 6.13.0 (#68) [[9194749](https://github.com/derniercri/packages/commit/919474921c0810a205097a0b6c4354d342704edf)]
+- ⬆️ Bump @babel/core from 7.12.1 to 7.12.3 (#67) [[e3bf2b7](https://github.com/derniercri/packages/commit/e3bf2b7305c6eb6d2050b317bcba38200b90b5d2)]
+- ⬆️ Bump @babel/preset-env from 7.12.0 to 7.12.1 (#66) [[c1105ed](https://github.com/derniercri/packages/commit/c1105ed1f603076477967e7d7e5546345cf1989b)]
+- ⬆️ Bump @babel/cli from 7.12.0 to 7.12.1 (#64) [[b56120c](https://github.com/derniercri/packages/commit/b56120c8f6123333a90ebd56112adfe184584187)]
+- ⬆️ Bump @babel/preset-typescript from 7.12.0 to 7.12.1 (#65) [[3f012de](https://github.com/derniercri/packages/commit/3f012de4e25afe9eeeb72d6458442aff32a46c6b)]
+- ⬆️ Bump @babel/core from 7.12.0 to 7.12.1 (#63) [[0510f32](https://github.com/derniercri/packages/commit/0510f3215ad7e7af8e9f5d5bfb51c95b0652c607)]
+- ⬆️ Bump @babel/preset-env from 7.11.5 to 7.12.0 (#58) [[31c0922](https://github.com/derniercri/packages/commit/31c09222504a35f18b6da5c004d60ae9565019f4)]
+- ⬆️ Bump @babel/core from 7.11.6 to 7.12.0 (#59) [[8d9c98f](https://github.com/derniercri/packages/commit/8d9c98f3c91830786b12b0a2f07f31f71dea7778)]
+- ⬆️ Bump react (#61) [[0ef2abe](https://github.com/derniercri/packages/commit/0ef2abe6d414077d4472858b3581e18803b2f3b5)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump react-test-renderer (#62) [[feca202](https://github.com/derniercri/packages/commit/feca20217eebef320546c1e47970adef6ef6de09)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump @babel/cli from 7.11.6 to 7.12.0 (#60) [[c2dfbd9](https://github.com/derniercri/packages/commit/c2dfbd91d8930c31ed2f68462284fabc78e8cedb)]
+- ⬆️ Bump @babel/preset-typescript from 7.10.4 to 7.12.0 (#57) [[9caac51](https://github.com/derniercri/packages/commit/9caac5159b611df2311dc8a8a3d869755a8fedac)]
+- ⬆️ Bump react from 16.13.1 to 16.14.0 (#56) [[c0016f2](https://github.com/derniercri/packages/commit/c0016f2124156131cd1c867b9bbe65babab80b56)]
+  - `eslint-config-react-native`
+
 <a name="v3.4.2"></a>
 ## v3.4.2 (2020-10-13)
 
