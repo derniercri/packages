@@ -8,15 +8,14 @@ Some CLI to help your development process
 [![License](https://img.shields.io/npm/l/@derniercri/cli.svg)](https://github.com/derniercri/packages/blob/master/package.json)
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Commands](#commands)
+* [@derniercri/cli](#derniercricli)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g @derniercri/cli
 $ derniercri COMMAND
@@ -28,31 +27,34 @@ USAGE
   $ derniercri COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
+* [`derniercri generate:native-component [NAME] [PATH]`](#derniercri-generatenative-component-name-path)
+* [`derniercri help [COMMAND]`](#derniercri-help-command)
 
-- [`derniercri generate-native-component [FILE]`](#derniercri-generate-native-component-file)
-- [`derniercri help [COMMAND]`](#derniercri-help-command)
+## `derniercri generate:native-component [NAME] [PATH]`
 
-## `derniercri generate-native-component [FILE]`
-
-describe the command here
+Generate a React Native component in desired folder
 
 ```
 USAGE
-  $ derniercri generate-native-component [FILE]
+  $ derniercri generate:native-component [NAME] [PATH]
+
+ARGUMENTS
+  NAME  Component name
+  PATH  Your component's path
 
 OPTIONS
   -f, --force
   -h, --help       show CLI help
-  -n, --name=name  name to print
+  -n, --name=name  Component name
+  -p, --path=path  Your component's path
 ```
 
-_See code: [src/commands/generate-native-component.ts](https://github.com/derniercri/packages/blob/v0.0.0/src/commands/generate-native-component.ts)_
+_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v0.0.0/src/commands/generate/native-component.ts)_
 
 ## `derniercri help [COMMAND]`
 
@@ -70,5 +72,4 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
-
 <!-- commandsstop -->
