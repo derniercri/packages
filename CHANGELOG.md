@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="v4.0.4"></a>
+## v4.0.4 (2020-11-11)
+
+### Changed
+
+- 🔧 Better release script [[61b15d8](https://github.com/derniercri/packages/commit/61b15d8f25ec210d137d150b31abcb5dcd3eb511)]
+  - `cli`
+
 <a name="v4.0.3"></a>
 ## v4.0.3 (2020-11-11)
 
