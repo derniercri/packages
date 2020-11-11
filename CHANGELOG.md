@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="v4.1.3"></a>
+## v4.1.3 (2020-11-11)
+
+### Changed
+
+- 🎨 Better screen component and tests [[37b5899](https://github.com/derniercri/packages/commit/37b58995414bef7bd1af1edafa58f95c17279ed2)]
+  - `react-native-template-derniercri`
+
 <a name="v4.1.2"></a>
 ## v4.1.2 (2020-11-11)
 
