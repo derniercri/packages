@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="v4.1.2"></a>
+## v4.1.2 (2020-11-11)
+
+### Added
+
+- ➕ Add missing @types/react-redux package [[1cae95c](https://github.com/derniercri/packages/commit/1cae95cc1b7a46c7bbc9a8e44eaa0692431b534e)]
+  - `react-native-template-derniercri`
+
 <a name="v4.1.1"></a>
 ## v4.1.1 (2020-11-11)
 
