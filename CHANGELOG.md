@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="v4.1.1"></a>
+## v4.1.1 (2020-11-11)
+
+### Changed
+
+- ⬆️ Upgrade CLI on native template [[639c0ae](https://github.com/derniercri/packages/commit/639c0ae04aadfc2cb6fa7dd134e8878f962bc323)]
+  - `react-native-template-derniercri`
+
 <a name="v4.1.0"></a>
 ## v4.1.0 (2020-11-11)
 
