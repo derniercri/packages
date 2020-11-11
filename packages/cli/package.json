@@ -1,7 +1,7 @@
 {
   "name": "@derniercri/cli",
   "description": "Some CLI to help your development process",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
   "bin": {
     "derniercri": "./bin/run",
