@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="v4.1.0"></a>
+## v4.1.0 (2020-11-11)
+
+### Changed
+
+- 🔧 Better release script [[d20e075](https://github.com/derniercri/packages/commit/d20e075cbef9621ee8fbe907839fad9b5bc9f972)]
+  - `cli-tools`,
+  - `cli`,
+  - `eslint-config-react-native`,
+  - `eslint-plugin-i18n`,
+  - `lerna-gitmoji-changelog`,
+  - `react-native-template-derniercri`
+
 <a name="v4.0.6"></a>
 ## v4.0.6 (2020-11-11)
 
