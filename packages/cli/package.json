@@ -61,7 +61,7 @@
   },
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
     "preversion": "oclif-dev readme && git add README.md",
     "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
