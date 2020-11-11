@@ -1,0 +1,70 @@
+{
+  "name": "@derniercri/cli",
+  "description": "Some CLI to help your development process",
+  "version": "0.0.0",
+  "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
+  "bin": {
+    "derniercri": "./bin/run",
+    "dc": "./bin/run"
+  },
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "inquirer": "^7.3.3",
+    "inquirer-fuzzy-path": "^2.3.0",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^10",
+    "globby": "^10",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derniercri/packages.git",
+    "directory": "packages/cli"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "bugs": {
+    "url": "https://github.com/derniercri/packages/issues"
+  },
+  "homepage": "https://github.com/derniercri/packages/cli",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "derniercri",
+    "plugins": [
+      "@oclif/plugin-help"
+    ],
+    "topics": {
+      "generate": { "description": "Generators" }
+    }
+  },
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "preversion": "oclif-dev readme && git add README.md",
+    "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
+  },
+  "types": "lib/index.d.ts"
+}
