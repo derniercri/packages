@@ -21,7 +21,7 @@ $ npm install -g @derniercri/cli
 $ derniercri COMMAND
 running command...
 $ derniercri (-v|--version|version)
-@derniercri/cli/4.0.3 darwin-x64 node-v14.8.0
+@derniercri/cli/4.0.4 darwin-x64 node-v14.8.0
 $ derniercri --help [COMMAND]
 USAGE
   $ derniercri COMMAND
@@ -54,7 +54,7 @@ OPTIONS
   -p, --path=path  Your component's path
 ```
 
-_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v4.0.3/src/commands/generate/native-component.ts)_
+_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v4.0.4/src/commands/generate/native-component.ts)_
 
 ## `derniercri help [COMMAND]`
 

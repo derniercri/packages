@@ -63,10 +63,10 @@
   },
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
-    "prepack": "oclif-dev manifest && oclif-dev readme && git add README.md",
     "test": "echo NO TESTS",
     "prerelease": "oclif-dev manifest && oclif-dev readme && git add README.md",
-    "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
+    "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib",
+    "prebuild": "prerelease"
   },
   "types": "lib/index.d.ts"
 }
