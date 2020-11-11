@@ -1,7 +1,7 @@
 {
   "name": "@derniercri/cli",
   "description": "Some CLI to help your development process",
-  "version": "0.0.0",
+  "version": "4.0.6",
   "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
   "bin": {
     "derniercri": "./bin/run",
@@ -56,14 +56,13 @@
       "@oclif/plugin-help"
     ],
     "topics": {
-      "generate": { "description": "Generators" }
+      "generate": {
+        "description": "Generators"
+      }
     }
   },
   "scripts": {
-    "postpack": "rm -f oclif.manifest.json",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-    "test": "echo NO TESTS",
-    "preversion": "oclif-dev readme && git add README.md",
+    "prerelease": "oclif-dev readme && git add README.md",
     "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
   },
   "types": "lib/index.d.ts"

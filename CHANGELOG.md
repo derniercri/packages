@@ -1,5 +1,69 @@
 # Changelog
 
+<a name="v4.0.6"></a>
+## v4.0.6 (2020-11-11)
+
+### Changed
+
+- 🔧 Better release script [[66a857e](https://github.com/derniercri/packages/commit/66a857e46ce7fd392cdb1a799ed98dd6a303356a)]
+  - `cli`
+
+<a name="v4.0.5"></a>
+## v4.0.5 (2020-11-11)
+
+### Changed
+
+- 🔧 Better release script [[3490a05](https://github.com/derniercri/packages/commit/3490a0568955d2125b3835e2cd3d8ee65833699d)]
+  - `cli`
+
+<a name="v4.0.4"></a>
+## v4.0.4 (2020-11-11)
+
+### Changed
+
+- 🔧 Better release script [[61b15d8](https://github.com/derniercri/packages/commit/61b15d8f25ec210d137d150b31abcb5dcd3eb511)]
+  - `cli`
+
+<a name="v4.0.3"></a>
+## v4.0.3 (2020-11-11)
+
+### Changed
+
+- 🔧 Better release script [[8c9dff0](https://github.com/derniercri/packages/commit/8c9dff05fdf4e4c6df1dc6a6f0ccafeb17b43af7)]
+  - `cli`
+
+<a name="v4.0.2"></a>
+## v4.0.2 (2020-11-11)
+
+### Changed
+
+- 🔧 Better release script [[6db0a19](https://github.com/derniercri/packages/commit/6db0a19d8ad7fd582adafd61e0d24b5e3ac4f4d9)]
+  - `cli`
+
+<a name="v4.0.1"></a>
+## v4.0.1 (2020-11-11)
+
+### Changed
+
+- 🔧 Better release step [[08e713c](https://github.com/derniercri/packages/commit/08e713c6bfb4ffd37b64b3a08f7209f929cf01a0)]
+  - `cli`
+
+<a name="v4.0.0"></a>
+## v4.0.0 (2020-11-11)
+
+### Changed
+
+- 🔧 Remove build from prepack [[f42c924](https://github.com/derniercri/packages/commit/f42c924e9614a2d8bd9225995e825d2423799c7c)]
+  - `cli`
+- 🔧 Useless script [[26f4fdd](https://github.com/derniercri/packages/commit/26f4fdd1229ddd7b6fbda47b0bb38dc97b56779b)]
+- ⬆️ Bump eslint from 7.12.1 to 7.13.0 (#92) [[dee4422](https://github.com/derniercri/packages/commit/dee44225ec1f677b4db24b6ccaa1461e013ed896)]
+  - `eslint-plugin-i18n`
+
+### Added
+
+- ✨ All new CLI package (#94) [[5531027](https://github.com/derniercri/packages/commit/55310277c3e9ed27e07aa7250107f043c700d1d9)]
+  - `cli`
+
 <a name="v3.5.0"></a>
 ## v3.5.0 (2020-11-06)
 

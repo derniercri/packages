@@ -15,9 +15,7 @@
     "test": "jest",
     "prepare": "yarn build",
     "lint": "eslint packages/**/src --ext .js,.jsx,.ts,.tsx",
-    "release": "lerna run preversion && ./scripts/release.sh",
-    "postpack": "lerna run postpack",
-    "prepack": "lerna run prepack"
+    "release": "./scripts/release.sh"
   },
   "husky": {
     "hooks": {
