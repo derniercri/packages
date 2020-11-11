@@ -1,5 +1,5 @@
 import { useHeaderHeight } from '@react-navigation/stack'
-import React from 'react'
+import React, { useMemo } from 'react'
 import {
   Keyboard,
   KeyboardAvoidingView,
@@ -22,7 +22,10 @@ const Screen: React.FC<ScreenProps> = ({
   ...props
 }) => {
   const headerHeight = useHeaderHeight()
-  const offset = isIos ? headerHeight + additionalOffset : 0
+  const offset = useMemo(() => (isIos ? headerHeight + additionalOffset : 0), [
+    additionalOffset,
+    headerHeight,
+  ])
 
   return (
     <KeyboardAvoidingView
