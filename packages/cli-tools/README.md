@@ -1,3 +1,6 @@
+> ⚠️ **This package is now deprecated in favor of [`@derniercri/cli`](https://github.com/derniercri/packages/tree/master/packages/cli)** <br>
+It will be removed in a future release
+
 # @derniercri/cli-tools
 
 ##### Liens directs

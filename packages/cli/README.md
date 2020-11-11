@@ -48,10 +48,34 @@ ARGUMENTS
   PATH  Your component's path
 
 OPTIONS
-  -f, --force
   -h, --help       show CLI help
   -n, --name=name  Component name
   -p, --path=path  Your component's path
+
+EXAMPLES
+  # By passing arguments
+     $ derniercri generate:native-component button src/components
+
+  # By passing flags
+     $ derniercri generate:native-component --name=button --path=src/components
+
+  # By following wizard
+     $ derniercri generate:native-component
+
+     ? What is the component name ? button
+     ? Select a target directory src/components/
+     ✨  Done in 4.24s.
+
+  It finally creates a folder like this
+  📦 src
+    ┣ 📂 components
+    ┃ ┣ 📂 button
+    ┃ ┃ ┣ 📜 index.ts
+    ┃ ┃ ┣ 📜 button.modules.scss
+    ┃ ┃ ┣ 📜 button.stories.tsx
+    ┃ ┃ ┣ 📜 button.test.tsx
+    ┃ ┃ ┗ 📜 button.tsx
+    ┗ ...
 ```
 
 _See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v4.1.0/src/commands/generate/native-component.ts)_
