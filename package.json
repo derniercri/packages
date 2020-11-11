@@ -15,7 +15,7 @@
     "test": "jest",
     "prepare": "yarn build",
     "lint": "eslint packages/**/src --ext .js,.jsx,.ts,.tsx",
-    "release": "lerna run preversion && ./scripts/release.sh",
+    "release": "./scripts/release.sh",
     "postpack": "lerna run postpack",
     "prepack": "lerna run prepack"
   },
