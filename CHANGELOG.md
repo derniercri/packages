@@ -1,5 +1,14 @@
 # Changelog
 
+<a name="v4.1.4"></a>
+## v4.1.4 (2020-11-11)
+
+### Added
+
+- ✨ Deprecate old package and improve documentation [[26d2b80](https://github.com/derniercri/packages/commit/26d2b80bea59a969e7553d6fd0a19eeaaad4fdc9)]
+  - `cli-tools`,
+  - `cli`
+
 <a name="v4.1.3"></a>
 ## v4.1.3 (2020-11-11)
 
