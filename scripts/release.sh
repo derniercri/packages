@@ -5,7 +5,7 @@ git stash
 # yarn gitmoji-changelog
 yarn generate-changelog
 git stash pop stash@{0}
-git add CHANGELOG.md
+git add .
 
 TAG_BEFORE_AMEND=$(git tag --points-at HEAD)
 echo "Tag before commit ${TAG_BEFORE_AMEND}"
