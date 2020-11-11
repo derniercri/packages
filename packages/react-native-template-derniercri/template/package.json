@@ -31,8 +31,8 @@
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
-    "@derniercri/cli-tools": "^3.3.4",
-    "@derniercri/eslint-config-react-native": "^3.3.4",
+    "@derniercri/cli": "^4.1.0",
+    "@derniercri/eslint-config-react-native": "^4.1.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "@storybook/addon-actions": "^6.0.17",
     "@storybook/addon-essentials": "^6.0.17",
