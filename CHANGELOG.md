@@ -1,5 +1,21 @@
 # Changelog
 
+<a name="v4.0.0"></a>
+## v4.0.0 (2020-11-11)
+
+### Changed
+
+- 🔧 Remove build from prepack [[f42c924](https://github.com/derniercri/packages/commit/f42c924e9614a2d8bd9225995e825d2423799c7c)]
+  - `cli`
+- 🔧 Useless script [[26f4fdd](https://github.com/derniercri/packages/commit/26f4fdd1229ddd7b6fbda47b0bb38dc97b56779b)]
+- ⬆️ Bump eslint from 7.12.1 to 7.13.0 (#92) [[dee4422](https://github.com/derniercri/packages/commit/dee44225ec1f677b4db24b6ccaa1461e013ed896)]
+  - `eslint-plugin-i18n`
+
+### Added
+
+- ✨ All new CLI package (#94) [[5531027](https://github.com/derniercri/packages/commit/55310277c3e9ed27e07aa7250107f043c700d1d9)]
+  - `cli`
+
 <a name="v3.5.0"></a>
 ## v3.5.0 (2020-11-06)
 

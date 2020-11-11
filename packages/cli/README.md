@@ -32,29 +32,7 @@ USAGE
 # Commands
 
 <!-- commands -->
-* [`derniercri generate:native-component [NAME] [PATH]`](#derniercri-generatenative-component-name-path)
 * [`derniercri help [COMMAND]`](#derniercri-help-command)
-
-## `derniercri generate:native-component [NAME] [PATH]`
-
-Generate a React Native component in desired folder
-
-```
-USAGE
-  $ derniercri generate:native-component [NAME] [PATH]
-
-ARGUMENTS
-  NAME  Component name
-  PATH  Your component's path
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  Component name
-  -p, --path=path  Your component's path
-```
-
-_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v0.0.0/src/commands/generate/native-component.ts)_
 
 ## `derniercri help [COMMAND]`
 
