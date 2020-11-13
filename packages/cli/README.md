@@ -30,6 +30,7 @@ USAGE
 * [`derniercri generate:native-component [NAME] [PATH]`](#derniercri-generatenative-component-name-path)
 * [`derniercri help [COMMAND]`](#derniercri-help-command)
 * [`derniercri setup:fastlane`](#derniercri-setupfastlane)
+* [`derniercri setup:sentry`](#derniercri-setupsentry)
 
 ## `derniercri generate:native-component [NAME] [PATH]`
 
@@ -106,4 +107,18 @@ OPTIONS
 ```
 
 _See code: [src/commands/setup/fastlane.ts](https://github.com/derniercri/packages/blob/v4.1.4/src/commands/setup/fastlane.ts)_
+
+## `derniercri setup:sentry`
+
+Setup Sentry (https://sentry.io/)
+
+```
+USAGE
+  $ derniercri setup:sentry
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/setup/sentry.ts](https://github.com/derniercri/packages/blob/v4.1.4/src/commands/setup/sentry.ts)_
 <!-- commandsstop -->
