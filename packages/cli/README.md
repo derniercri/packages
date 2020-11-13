@@ -16,7 +16,7 @@ $ npm install -g @derniercri/cli
 $ derniercri COMMAND
 running command...
 $ derniercri (-v|--version|version)
-@derniercri/cli/4.2.0-alpha.1 darwin-x64 node-v14.8.0
+@derniercri/cli/4.2.0-alpha.2 darwin-x64 node-v14.8.0
 $ derniercri --help [COMMAND]
 USAGE
   $ derniercri COMMAND
@@ -75,7 +75,7 @@ EXAMPLES
     ┗ ...
 ```
 
-_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v4.2.0-alpha.1/src/commands/generate/native-component.ts)_
+_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v4.2.0-alpha.2/src/commands/generate/native-component.ts)_
 
 ## `derniercri help [COMMAND]`
 
@@ -106,7 +106,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/setup/fastlane.ts](https://github.com/derniercri/packages/blob/v4.2.0-alpha.1/src/commands/setup/fastlane.ts)_
+_See code: [src/commands/setup/fastlane.ts](https://github.com/derniercri/packages/blob/v4.2.0-alpha.2/src/commands/setup/fastlane.ts)_
 
 ## `derniercri setup:sentry`
 
@@ -120,5 +120,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/setup/sentry.ts](https://github.com/derniercri/packages/blob/v4.2.0-alpha.1/src/commands/setup/sentry.ts)_
+_See code: [src/commands/setup/sentry.ts](https://github.com/derniercri/packages/blob/v4.2.0-alpha.2/src/commands/setup/sentry.ts)_
 <!-- commandsstop -->
