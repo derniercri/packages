@@ -4,7 +4,7 @@ import * as execa from "execa";
 // @ts-ignore
 import * as listrInquirer from "listr-inquirer";
 import * as childProcess from "child_process";
-import { writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 
 export default class SetupSentry extends Command {
   static description = "Setup Sentry (https://sentry.io/)";
@@ -48,6 +48,12 @@ Sentry.init({
 })
 `
           );
+
+          const AppTsxContent = readFileSync("./App.tsx");
+          const nextAppTsxContent = `import './modules/sentry'
+${AppTsxContent}`;
+
+          writeFileSync("./App.tsx", nextAppTsxContent);
         },
       },
     ]);
