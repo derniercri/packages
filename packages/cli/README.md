@@ -29,6 +29,7 @@ USAGE
 <!-- commands -->
 * [`derniercri generate:native-component [NAME] [PATH]`](#derniercri-generatenative-component-name-path)
 * [`derniercri help [COMMAND]`](#derniercri-help-command)
+* [`derniercri setup:fastlane`](#derniercri-setupfastlane)
 
 ## `derniercri generate:native-component [NAME] [PATH]`
 
@@ -91,4 +92,18 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
+
+## `derniercri setup:fastlane`
+
+Initialize fastlane
+
+```
+USAGE
+  $ derniercri setup:fastlane
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/setup/fastlane.ts](https://github.com/derniercri/packages/blob/v4.1.4/src/commands/setup/fastlane.ts)_
 <!-- commandsstop -->
