@@ -1,9 +1,9 @@
 import { Command, flags } from "@oclif/command";
-import * as Listr from "listr";
-import * as execa from "execa";
+import Listr from "listr";
+import execa from "execa";
 // @ts-ignore
-import * as listrInquirer from "listr-inquirer";
-import * as childProcess from "child_process";
+import listrInquirer from "listr-inquirer";
+import childProcess from "child_process";
 import { readFileSync, writeFileSync } from "fs";
 
 export default class SetupSentry extends Command {
