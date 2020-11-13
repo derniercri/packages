@@ -49,7 +49,7 @@ export default class SetupFastlane extends Command {
 You can now run \`bundle exec fastlane init\` to set it up.
 You can find fastlane documentation here https://docs.fastlane.tools/
 `,
-            ]).stdout.pipe(process.stdout);
+            ]).stdout?.pipe(process.stdout);
           },
         },
       ]);

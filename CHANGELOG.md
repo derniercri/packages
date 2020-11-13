@@ -1,5 +1,40 @@
 # Changelog
 
+<a name="v4.2.0-alpha.0"></a>
+## v4.2.0-alpha.0 (2020-11-13)
+
+### Added
+
+- ✨ Write to App.tsx [[9608535](https://github.com/derniercri/packages/commit/96085351d3949c2e17792b4592f6cd3ff6b3160a)]
+  - `cli`
+- ✨ Add cli to install Sentry [[f4e70e6](https://github.com/derniercri/packages/commit/f4e70e65c1fb071a6c689e1c21ebb97aa278260f)]
+  - `cli`
+- ✨ Start Fastlane setup script (#100) [[4e095fe](https://github.com/derniercri/packages/commit/4e095fe212142ff7db1b7e4ab84ad8d7a2161d69)]
+- ✨ Start Fastlane setup script [[c37fb1a](https://github.com/derniercri/packages/commit/c37fb1a01f8bf3c9cedd50458f73655b3b2adc4a)]
+  - `cli`
+
+### Changed
+
+- ⬆️ Bump ts-node from 8.10.2 to 9.0.0 (#98) [[46c523c](https://github.com/derniercri/packages/commit/46c523cdc73f36e2a0f271be0a9ea286805aeb08)]
+  - `cli`
+- 🎨 Add editorconfig file (#102) [[b3669c1](https://github.com/derniercri/packages/commit/b3669c12890c94a433bf485b52c03b7bfc63e523)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump @oclif/dev-cli from 1.22.2 to 1.23.0 (#99) [[746e1f5](https://github.com/derniercri/packages/commit/746e1f591e8d8069ea33960b30cf336e77352b68)]
+- ⬆️ Bump @types/node from 10.17.44 to 14.14.7 (#97) [[9a9418c](https://github.com/derniercri/packages/commit/9a9418c855c399c57d077fb01b0bf6ea508d9698)]
+  - `cli`
+- ⬆️ Bump tslib from 1.14.1 to 2.0.3 (#96) [[6ae14a5](https://github.com/derniercri/packages/commit/6ae14a5c0b7c2ce89edb43c633d24b2a43c0dc8f)]
+  - `cli`
+- ⬆️ Bump globby from 10.0.2 to 11.0.1 (#95) [[093250f](https://github.com/derniercri/packages/commit/093250fce7f4145364b8f63083bac0c500ca2dd9)]
+  - `cli`
+- 🎨 Add example folder [[2bd2b97](https://github.com/derniercri/packages/commit/2bd2b97151dae67320c43ac82d676af5a66811b6)]
+  - `cli`
+
+### Removed
+
+- 🔥 Remove useless file [[6229a43](https://github.com/derniercri/packages/commit/6229a43cfa4fac0e883920af7cc91e26a91ce504)]
+- 🔥 Remove useless and not working badges [[7032651](https://github.com/derniercri/packages/commit/7032651daf44c9396d1265cba0efa4ebc837eb21)]
+  - `cli`
+
 <a name="v4.1.4"></a>
 ## v4.1.4 (2020-11-11)
 
