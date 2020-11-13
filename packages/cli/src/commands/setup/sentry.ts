@@ -39,7 +39,7 @@ export default class SetupSentry extends Command {
         title: "Insert into your code",
         task: (ctx) => {
           writeFileSync(
-            "./modules/sentry.ts",
+            `${process.cwd()}/modules/sentry.ts`,
             `import * as Sentry from '@sentry/react-native'
 
 Sentry.init({
