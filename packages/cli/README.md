@@ -68,7 +68,6 @@ EXAMPLES
     ┣ 📂 components
     ┃ ┣ 📂 button
     ┃ ┃ ┣ 📜 index.ts
-    ┃ ┃ ┣ 📜 button.modules.scss
     ┃ ┃ ┣ 📜 button.stories.tsx
     ┃ ┃ ┣ 📜 button.test.tsx
     ┃ ┃ ┗ 📜 button.tsx
