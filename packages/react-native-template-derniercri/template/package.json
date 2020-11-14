@@ -10,7 +10,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prestorybook": "rnstl",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "postinstall": "npx pod-install ios"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.13.2",
