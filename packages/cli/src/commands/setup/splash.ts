@@ -66,7 +66,6 @@ export default class SetupSplash extends Command {
       },
       {
         title: "Package installation",
-        skip: () => true,
         task: async () => {
           await execa("yarn", ["add", "react-native-splash-screen"]);
           await execa.command("npx pod-install ios");
@@ -74,7 +73,6 @@ export default class SetupSplash extends Command {
       },
       {
         title: "Configuration",
-        skip: () => true,
         task: () => {
           const nextActivityContent = mainActivityContent
             .replace(`// ${KEY}-IMPORT`, "import org.devio.rn.splashscreen.SplashScreen;")
