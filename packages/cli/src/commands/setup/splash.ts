@@ -19,7 +19,9 @@ export default class SetupSplash extends Command {
     const mainActivityContent = fs.readFileSync(`${fullAndroidPath}/MainActivity.java`, "utf-8");
 
     const mainIosPath = "./ios";
-    const appDelegateContent = fs.readFileSync(`${mainIosPath}/AppDelegate.m`, "utf-8");
+    const iosProjectPath = fs.readdirSync(mainIosPath, { withFileTypes: true })[0].name;
+    const fullIosPath = `${mainIosPath}/${iosProjectPath}`;
+    const appDelegateContent = fs.readFileSync(`${fullIosPath}/AppDelegate.m`, "utf-8");
 
     const tasks = new Listr([
       {
@@ -62,6 +64,7 @@ export default class SetupSplash extends Command {
       },
       {
         title: "Package installation",
+        skip: () => true,
         task: async () => {
           await execa("yarn", ["add", "react-native-splash-screen"]);
           await execa.command("npx pod-install ios");
@@ -69,6 +72,7 @@ export default class SetupSplash extends Command {
       },
       {
         title: "Configuration",
+        skip: () => true,
         task: () => {
           const nextActivityContent = mainActivityContent
             .replace(`// ${KEY}-IMPORT`, "import org.devio.rn.splashscreen.SplashScreen;")
