@@ -90,7 +90,7 @@ export default class SetupSplash extends Command {
             .replace(`// ${KEY}-ONCREATE`, "[RNSplashScreen show];");
 
           fs.writeFileSync(`${fullAndroidPath}/MainActivity.java`, nextActivityContent);
-          fs.writeFileSync(`${mainIosPath}/AppDelegate.m`, nextAppDelegateContent);
+          fs.writeFileSync(`${fullIosPath}/AppDelegate.m`, nextAppDelegateContent);
         },
       },
     ]);
