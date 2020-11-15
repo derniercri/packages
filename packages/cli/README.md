@@ -31,6 +31,7 @@ USAGE
 * [`derniercri help [COMMAND]`](#derniercri-help-command)
 * [`derniercri setup:fastlane`](#derniercri-setupfastlane)
 * [`derniercri setup:sentry`](#derniercri-setupsentry)
+* [`derniercri setup:splash`](#derniercri-setupsplash)
 
 ## `derniercri generate:native-component [NAME] [PATH]`
 
@@ -120,4 +121,18 @@ OPTIONS
 ```
 
 _See code: [src/commands/setup/sentry.ts](https://github.com/derniercri/packages/blob/v4.2.0/src/commands/setup/sentry.ts)_
+
+## `derniercri setup:splash`
+
+Setup react-native-splash-screen
+
+```
+USAGE
+  $ derniercri setup:splash
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/setup/splash.ts](https://github.com/derniercri/packages/blob/v4.2.0/src/commands/setup/splash.ts)_
 <!-- commandsstop -->

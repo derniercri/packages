@@ -11,6 +11,7 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^3",
+    "cli-highlight": "^2.1.4",
     "execa": "^4.1.0",
     "inquirer": "^7.3.3",
     "inquirer-fuzzy-path": "^2.3.0",
