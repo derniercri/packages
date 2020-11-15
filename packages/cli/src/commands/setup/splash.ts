@@ -19,7 +19,9 @@ export default class SetupSplash extends Command {
     const mainActivityContent = fs.readFileSync(`${fullAndroidPath}/MainActivity.java`, "utf-8");
 
     const mainIosPath = "./ios";
-    const iosProjectPath = fs.readdirSync(mainIosPath, { withFileTypes: true })[0].name;
+    const iosProjectPath = fs
+      .readdirSync(mainIosPath, { withFileTypes: true })
+      .filter((dirent) => dirent.name !== "Pods")[0].name;
     const fullIosPath = `${mainIosPath}/${iosProjectPath}`;
     const appDelegateContent = fs.readFileSync(`${fullIosPath}/AppDelegate.m`, "utf-8");
 
