@@ -30,6 +30,7 @@ USAGE
 * [`derniercri generate:native-component [NAME] [PATH]`](#derniercri-generatenative-component-name-path)
 * [`derniercri help [COMMAND]`](#derniercri-help-command)
 * [`derniercri setup:fastlane`](#derniercri-setupfastlane)
+* [`derniercri setup:i18n`](#derniercri-setupi18n)
 * [`derniercri setup:sentry`](#derniercri-setupsentry)
 * [`derniercri setup:splash`](#derniercri-setupsplash)
 
@@ -107,6 +108,20 @@ OPTIONS
 ```
 
 _See code: [src/commands/setup/fastlane.ts](https://github.com/derniercri/packages/blob/v4.3.0/src/commands/setup/fastlane.ts)_
+
+## `derniercri setup:i18n`
+
+Initialize i18n
+
+```
+USAGE
+  $ derniercri setup:i18n
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/setup/i18n.ts](https://github.com/derniercri/packages/blob/v4.3.0/src/commands/setup/i18n.ts)_
 
 ## `derniercri setup:sentry`
 
