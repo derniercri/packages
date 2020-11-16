@@ -56,7 +56,14 @@ export default class SetupI18N extends Command {
       },
       {
         title: "Install dependencies",
-        skip: () => true,
+        skip: () => {
+          const packageJson = fs.readFileSync("./package.json", "utf-8");
+          const packageJsonJson = JSON.parse(packageJson);
+
+          return Object.keys(packageJsonJson.devDependencies || {}).includes(
+            "@derniercri/eslint-config-react-native"
+          );
+        },
         task: () => execa.command("yarn add -D @derniercri/eslint-config-react-native"),
       },
       {
