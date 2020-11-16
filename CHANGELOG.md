@@ -1,5 +1,14 @@
 # Changelog
 
+<a name="v4.4.2"></a>
+## v4.4.2 (2020-11-16)
+
+### Added
+
+- ✨ Add ESLint override [[de628e3](https://github.com/derniercri/packages/commit/de628e325b0152082f95536be1b596f64cf1ebfb)]
+  - `cli`,
+  - `react-native-i18n`
+
 <a name="v4.4.1"></a>
 ## v4.4.1 (2020-11-16)
 
