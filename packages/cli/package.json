@@ -45,7 +45,7 @@
   "bugs": {
     "url": "https://github.com/derniercri/packages/issues"
   },
-  "homepage": "https://github.com/derniercri/packages/cli",
+  "homepage": "https://github.com/derniercri/packages/tree/master/packages/cli#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },

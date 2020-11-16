@@ -22,7 +22,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "homepage": "https://github.com/derniercri/packages#readme",
+  "homepage": "https://github.com/derniercri/packages/tree/master/packages/lerna-gitmoji-changelog#readme",
   "dependencies": {
     "semver": "^7.3.2"
   },

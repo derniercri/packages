@@ -1,0 +1,37 @@
+{
+  "name": "@derniercri/react-native-i18n",
+  "description": "Easy i18n for your react-native app",
+  "version": "4.3.0",
+  "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
+  "scripts": {
+    "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib",
+    "postbuild": "tsc -p . --outDir lib"
+  },
+  "dependencies": {
+    "lodash.get": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/lodash.get": "^4.4.6"
+  },
+  "peerDependencies": {
+    "react-native-localize": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derniercri/packages.git",
+    "directory": "packages/react-native-i18n"
+  },
+  "bugs": {
+    "url": "https://github.com/derniercri/packages/issues"
+  },
+  "homepage": "https://github.com/derniercri/packages/tree/master/packages/react-native-i18n#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts"
+}
