@@ -11,7 +11,8 @@
     "lodash.get": "^4.4.2"
   },
   "devDependencies": {
-    "@types/lodash.get": "^4.4.6"
+    "@types/lodash.get": "^4.4.6",
+    "react-native-localize": "^2.0.0"
   },
   "peerDependencies": {
     "react-native-localize": "^2.0.0"

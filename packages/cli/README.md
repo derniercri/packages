@@ -29,6 +29,7 @@ USAGE
 <!-- commands -->
 * [`derniercri generate:native-component [NAME] [PATH]`](#derniercri-generatenative-component-name-path)
 * [`derniercri help [COMMAND]`](#derniercri-help-command)
+* [`derniercri i18n:check`](#derniercri-i18ncheck)
 * [`derniercri setup:fastlane`](#derniercri-setupfastlane)
 * [`derniercri setup:i18n`](#derniercri-setupi18n)
 * [`derniercri setup:sentry`](#derniercri-setupsentry)
@@ -94,6 +95,25 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
+
+## `derniercri i18n:check`
+
+Checks your code for missing translations
+
+```
+USAGE
+  $ derniercri i18n:check
+
+OPTIONS
+  -d, --dictionaries=dictionaries  (required) Your dictionaries root path
+  -h, --help                       Show this help
+  --src=src                        [default: ./src] Your source path
+
+EXAMPLE
+  $ derniercri i18n:check -d ./src/i18n/dictionaries
+```
+
+_See code: [src/commands/i18n/check.ts](https://github.com/derniercri/packages/blob/v4.3.0/src/commands/i18n/check.ts)_
 
 ## `derniercri setup:fastlane`
 

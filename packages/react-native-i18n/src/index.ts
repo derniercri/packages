@@ -26,7 +26,7 @@ class I18n<T extends Dictionaries> {
     return this;
   };
 
-  public t = (path: keyof T[keyof T], variables?: { [key: string]: string }) => {
+  public t = (path: keyof T[keyof T] | string, variables?: { [key: string]: string }) => {
     let result = get(this.dictionaries[this.languageKey], path);
 
     if (result) {
