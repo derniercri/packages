@@ -3,18 +3,7 @@ import Listr from "listr";
 import * as fs from "fs";
 import path from "path";
 import get from "lodash.get";
-
-async function* getFiles(dir: string): any {
-  const dirents = await fs.readdirSync(dir, { withFileTypes: true });
-  for (const dirent of dirents) {
-    const res = path.resolve(dir, dirent.name);
-    if (dirent.isDirectory()) {
-      yield* getFiles(res);
-    } else {
-      yield res;
-    }
-  }
-}
+import { getFiles } from "../../utils/i18n";
 
 // My personal test command
 // (cd packages/cli && yarn derniercri i18n:check -d ../react-native-i18n/example/src/i18n/dictionaries --src ../react-native-i18n/example/src)
@@ -74,7 +63,6 @@ export default class I18NCheck extends Command {
           let keysCount = 0;
 
           const SOURCE_PATH = flags.src || "./src";
-          // const SOURCE_PATH = "../react-native-i18n/example/src";
 
           for await (const fileName of getFiles(SOURCE_PATH)) {
             if ([".tsx", ".ts", ".js", ".tsx"].includes(path.extname(fileName))) {
