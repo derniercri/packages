@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="v4.4.1"></a>
+## v4.4.1 (2020-11-16)
+
+### Added
+
+- ✨ Update template [[6b77b9f](https://github.com/derniercri/packages/commit/6b77b9f756658058874087f68ae6752848232c4a)]
+  - `react-native-template-derniercri`
+
 <a name="v4.4.0"></a>
 ## v4.4.0 (2020-11-16)
 
