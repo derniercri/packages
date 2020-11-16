@@ -1,7 +1,7 @@
 {
   "name": "@derniercri/react-native-i18n",
   "description": "Easy i18n for your react-native app",
-  "version": "4.4.0-alpha.1",
+  "version": "4.4.0",
   "author": "Donovan BENFOUZARI <d.benfouzari@gmail.com>",
   "scripts": {
     "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib",

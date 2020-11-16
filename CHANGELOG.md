@@ -1,5 +1,57 @@
 # Changelog
 
+<a name="v4.4.0"></a>
+## v4.4.0 (2020-11-16)
+
+### Changed
+
+- 🎨 Remove buggy changelog part [[c7756f0](https://github.com/derniercri/packages/commit/c7756f0c9830ac0aecca4eb86ab2dad918de7ae8)]
+- 📌 Pin dependency [[8a67a85](https://github.com/derniercri/packages/commit/8a67a85aa3c6079be2a7d150cdd9bec14a86f506)]
+  - `react-native-template-derniercri`
+- ⬆️ Bump @typescript-eslint/eslint-plugin [[4e126d6](https://github.com/derniercri/packages/commit/4e126d6574681d281d4adf83f38c97fc18383695)]
+  - `react-native-template-derniercri`
+- ⬆️ Update cli in template [[995b402](https://github.com/derniercri/packages/commit/995b402c6eb85b8266d86800db460151d0f028ae)]
+  - `react-native-template-derniercri`
+- 🚸 Add post-install script [[e0a8f8f](https://github.com/derniercri/packages/commit/e0a8f8f77a0761d9d50d6dfc40137b91f642aab3)]
+  - `react-native-template-derniercri`
+- 📝 Fix bad documentation about gen native comp [[2fd3aaf](https://github.com/derniercri/packages/commit/2fd3aaf44be5d739dece6e007e2544cee8875de6)]
+  - `cli`
+
+### Added
+
+- ✨ Add some i18n tooling (#109) [[315cdfb](https://github.com/derniercri/packages/commit/315cdfb5377da6f58088c68291ed7524505984aa)]
+  - `cli-tools`,
+  - `cli`,
+  - `eslint-config-react-native`,
+  - `lerna-gitmoji-changelog`,
+  - `react-native-i18n`,
+  - `react-native-template-derniercri`
+- ✨ Add splash screen setup script (#108) [[0c4af0b](https://github.com/derniercri/packages/commit/0c4af0b6dc12d3c5aec984bfc1ba24acfcc781ca)]
+- ✨ Add placeholders on native template [[e7be197](https://github.com/derniercri/packages/commit/e7be1975c2b15b6c9443ea41187fac6386530d28)]
+  - `react-native-template-derniercri`
+- ✨ Add splash setup command [[e3374d3](https://github.com/derniercri/packages/commit/e3374d322f405695a1fd340b4e675f4023da8229)]
+  - `cli`
+- ➕ Changed async-storage dependency (#107) [[d593dcf](https://github.com/derniercri/packages/commit/d593dcfc906bd9751cd9bf0dc1846822f2b21509)]
+  - `react-native-template-derniercri`
+- ✨ Add cli to install Sentry (#105) [[ac4bc9a](https://github.com/derniercri/packages/commit/ac4bc9a47d334a6deca61bbc076c8b70cd987e8f)]
+  - `cli`,
+  - `react-native-template-derniercri`
+
+### Fixed
+
+- 🐛 Remove unused and buggy package [[ddf4576](https://github.com/derniercri/packages/commit/ddf4576565a0410647e07c72bf0f34294d513268)]
+  - `react-native-template-derniercri`
+- 🐛 Write to correct path [[0097a90](https://github.com/derniercri/packages/commit/0097a90d5e2175cfc63d46417783afc7e896f5fb)]
+  - `cli`
+- 🐛 Remove skip commands [[e003334](https://github.com/derniercri/packages/commit/e003334f98f73e1e2aa9fa70fa837f35a659f464)]
+  - `cli`
+- 🐛 Remove all pods related from ios check [[ae3580f](https://github.com/derniercri/packages/commit/ae3580fbd8a307d8160f2bc45e68845098540943)]
+  - `cli`
+- 🐛 Avoid getting Pods folder [[89a9b89](https://github.com/derniercri/packages/commit/89a9b896981af26f0ca40817127837ac9ff4dc76)]
+  - `cli`
+- 🐛 Fix iOS path [[246788a](https://github.com/derniercri/packages/commit/246788a2e3d51281e223760484c2e4f79f1b2a8c)]
+  - `cli`
+
 <a name="v4.2.0-alpha.0"></a>
 ## v4.2.0-alpha.0 (2020-11-13)
 
