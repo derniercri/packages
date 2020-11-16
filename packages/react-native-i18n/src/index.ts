@@ -6,16 +6,14 @@ type Dictionaries = { [languageKey: string]: unknown };
 class I18n<T extends Dictionaries> {
   dictionaries = {} as T;
 
-  preferredLanguage = RNLocalize.getLocales()[0].languageCode;
-  fallbackLanguage = Object.keys(this.dictionaries)[0];
+  private preferredLanguage = RNLocalize.getLocales()[0].languageCode;
+  private fallbackLanguage = Object.keys(this.dictionaries)[0];
 
-  languageKey = this.preferredLanguage || this.fallbackLanguage;
+  private languageKey = this.preferredLanguage || this.fallbackLanguage;
 
   public setLocale = (lngKey: string) => {
     this.languageKey = lngKey;
   };
-
-  public getDictionaries = () => this.dictionaries;
 
   public configure = (options: { dictionaries: T; locale?: keyof T }) => {
     this.dictionaries = options.dictionaries as T;
