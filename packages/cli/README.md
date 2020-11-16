@@ -16,7 +16,7 @@ $ npm install -g @derniercri/cli
 $ derniercri COMMAND
 running command...
 $ derniercri (-v|--version|version)
-@derniercri/cli/4.4.2 darwin-x64 node-v14.8.0
+@derniercri/cli/4.4.3 darwin-x64 node-v14.8.0
 $ derniercri --help [COMMAND]
 USAGE
   $ derniercri COMMAND
@@ -78,7 +78,7 @@ EXAMPLES
     ┗ ...
 ```
 
-_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v4.4.2/src/commands/generate/native-component.ts)_
+_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v4.4.3/src/commands/generate/native-component.ts)_
 
 ## `derniercri help [COMMAND]`
 
@@ -114,7 +114,7 @@ EXAMPLE
   $ derniercri i18n:check -d ./src/i18n/dictionaries
 ```
 
-_See code: [src/commands/i18n/check.ts](https://github.com/derniercri/packages/blob/v4.4.2/src/commands/i18n/check.ts)_
+_See code: [src/commands/i18n/check.ts](https://github.com/derniercri/packages/blob/v4.4.3/src/commands/i18n/check.ts)_
 
 ## `derniercri i18n:generate-missing`
 
@@ -133,7 +133,7 @@ EXAMPLE
   $ derniercri i18n:generate-missing -d ./src/i18n/dictionaries
 ```
 
-_See code: [src/commands/i18n/generate-missing.ts](https://github.com/derniercri/packages/blob/v4.4.2/src/commands/i18n/generate-missing.ts)_
+_See code: [src/commands/i18n/generate-missing.ts](https://github.com/derniercri/packages/blob/v4.4.3/src/commands/i18n/generate-missing.ts)_
 
 ## `derniercri setup:fastlane`
 
@@ -147,7 +147,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/setup/fastlane.ts](https://github.com/derniercri/packages/blob/v4.4.2/src/commands/setup/fastlane.ts)_
+_See code: [src/commands/setup/fastlane.ts](https://github.com/derniercri/packages/blob/v4.4.3/src/commands/setup/fastlane.ts)_
 
 ## `derniercri setup:i18n`
 
@@ -161,7 +161,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/setup/i18n.ts](https://github.com/derniercri/packages/blob/v4.4.2/src/commands/setup/i18n.ts)_
+_See code: [src/commands/setup/i18n.ts](https://github.com/derniercri/packages/blob/v4.4.3/src/commands/setup/i18n.ts)_
 
 ## `derniercri setup:sentry`
 
@@ -175,7 +175,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/setup/sentry.ts](https://github.com/derniercri/packages/blob/v4.4.2/src/commands/setup/sentry.ts)_
+_See code: [src/commands/setup/sentry.ts](https://github.com/derniercri/packages/blob/v4.4.3/src/commands/setup/sentry.ts)_
 
 ## `derniercri setup:splash`
 
@@ -189,5 +189,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/setup/splash.ts](https://github.com/derniercri/packages/blob/v4.4.2/src/commands/setup/splash.ts)_
+_See code: [src/commands/setup/splash.ts](https://github.com/derniercri/packages/blob/v4.4.3/src/commands/setup/splash.ts)_
 <!-- commandsstop -->

@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="v4.4.3"></a>
+## v4.4.3 (2020-11-16)
+
+### Fixed
+
+- 🐛 Search for correct dependencies [[8445a4b](https://github.com/derniercri/packages/commit/8445a4b0092445cf5d7bcba3341da4e614d93092)]
+  - `cli`
+
 <a name="v4.4.2"></a>
 ## v4.4.2 (2020-11-16)
 
