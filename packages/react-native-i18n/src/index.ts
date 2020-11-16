@@ -4,7 +4,7 @@ import * as RNLocalize from "react-native-localize";
 type Dictionaries = { [languageKey: string]: unknown };
 
 class I18n<T extends Dictionaries> {
-  dictionaries = {} as T;
+  private dictionaries = {} as T;
 
   private preferredLanguage = RNLocalize.getLocales()[0].languageCode;
   private fallbackLanguage = Object.keys(this.dictionaries)[0];

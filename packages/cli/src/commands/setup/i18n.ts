@@ -51,6 +51,23 @@ export default class SetupI18N extends Command {
             ...(asJson.rules || {}),
             "@derniercri/i18n/no-child-string": ["error"],
           };
+          asJson.overrides = asJson.overrides || [];
+
+          const lineIndex = asJson.overrides.findIndex(
+            (ov: any) =>
+              JSON.stringify(ov.files) === JSON.stringify(["*.test.tsx", "*.stories.tsx"])
+          );
+
+          if (lineIndex > -1) {
+            asJson.overrides[lineIndex].rules["@derniercri/i18n/no-child-string"] = "off";
+          } else {
+            asJson.overrides.push({
+              files: ["*.test.tsx", "*.stories.tsx"],
+              rules: {
+                "@derniercri/i18n/no-child-string": "off",
+              },
+            });
+          }
 
           ctx.path = path;
           ctx.data = JSON.stringify(asJson, null, 2);
