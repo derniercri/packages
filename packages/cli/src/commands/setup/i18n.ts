@@ -91,7 +91,7 @@ export default class SetupI18N extends Command {
           const packageJson = fs.readFileSync("./package.json", "utf-8");
           const packageJsonJson = JSON.parse(packageJson);
 
-          return Object.keys(packageJsonJson.devDependencies || {}).includes(
+          return Object.keys(packageJsonJson.dependencies || {}).includes(
             "@derniercri/react-native-i18n"
           );
         },
