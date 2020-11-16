@@ -1,6 +1,6 @@
 {
   "name": "@derniercri/lerna-gitmoji-changelog",
-  "version": "4.1.0",
+  "version": "4.4.0-alpha.0",
   "description": "",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "homepage": "https://github.com/derniercri/packages#readme",
+  "homepage": "https://github.com/derniercri/packages/tree/master/packages/lerna-gitmoji-changelog#readme",
   "dependencies": {
     "semver": "^7.3.2"
   },

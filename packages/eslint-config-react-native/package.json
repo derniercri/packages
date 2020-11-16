@@ -1,6 +1,6 @@
 {
   "name": "@derniercri/eslint-config-react-native",
-  "version": "4.1.0",
+  "version": "4.4.0-alpha.0",
   "description": "React-Native ESLint config",
   "main": "lib/index.js",
   "repository": {
@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/derniercri/packages/issues"
   },
-  "homepage": "https://github.com/derniercri/packages/eslint-config-react-native",
+  "homepage": "https://github.com/derniercri/packages/tree/master/packages/eslint-config-react-native#readme",
   "scripts": {
     "build": "babel --source-maps --no-comments --quiet --root-mode upward --extensions \".js,.ts\" src -d lib"
   },

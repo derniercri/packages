@@ -1,7 +1,7 @@
 import { Command, flags } from "@oclif/command";
-import * as inquirer from "inquirer";
-import * as execa from "execa";
-import * as Listr from "listr";
+import inquirer from "inquirer";
+import execa from "execa";
+import Listr from "listr";
 import { touchGemfile } from "../../utils/fastlane";
 
 export default class SetupFastlane extends Command {

@@ -1,6 +1,6 @@
 {
   "name": "@derniercri/cli-tools",
-  "version": "4.1.4",
+  "version": "4.4.0-alpha.0",
   "description": "Some wonderful tools :)",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/derniercri/packages/issues"
   },
-  "homepage": "https://github.com/derniercri/packages/cli-tools",
+  "homepage": "https://github.com/derniercri/packages/tree/master/packages/cli-tools#readme",
   "browserslist": "> 0.25%, not dead",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

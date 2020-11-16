@@ -16,7 +16,7 @@ $ npm install -g @derniercri/cli
 $ derniercri COMMAND
 running command...
 $ derniercri (-v|--version|version)
-@derniercri/cli/4.3.0 darwin-x64 node-v14.8.0
+@derniercri/cli/4.4.0-alpha.1 darwin-x64 node-v14.8.0
 $ derniercri --help [COMMAND]
 USAGE
   $ derniercri COMMAND
@@ -29,7 +29,10 @@ USAGE
 <!-- commands -->
 * [`derniercri generate:native-component [NAME] [PATH]`](#derniercri-generatenative-component-name-path)
 * [`derniercri help [COMMAND]`](#derniercri-help-command)
+* [`derniercri i18n:check`](#derniercri-i18ncheck)
+* [`derniercri i18n:generate-missing`](#derniercri-i18ngenerate-missing)
 * [`derniercri setup:fastlane`](#derniercri-setupfastlane)
+* [`derniercri setup:i18n`](#derniercri-setupi18n)
 * [`derniercri setup:sentry`](#derniercri-setupsentry)
 * [`derniercri setup:splash`](#derniercri-setupsplash)
 
@@ -75,7 +78,7 @@ EXAMPLES
     ┗ ...
 ```
 
-_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v4.3.0/src/commands/generate/native-component.ts)_
+_See code: [src/commands/generate/native-component.ts](https://github.com/derniercri/packages/blob/v4.4.0-alpha.1/src/commands/generate/native-component.ts)_
 
 ## `derniercri help [COMMAND]`
 
@@ -94,6 +97,44 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
 
+## `derniercri i18n:check`
+
+Checks your code for missing translations
+
+```
+USAGE
+  $ derniercri i18n:check
+
+OPTIONS
+  -d, --dictionaries=dictionaries  (required) Your dictionaries root path
+  -h, --help                       Show this help
+  --src=src                        [default: ./src] Your source path
+
+EXAMPLE
+  $ derniercri i18n:check -d ./src/i18n/dictionaries
+```
+
+_See code: [src/commands/i18n/check.ts](https://github.com/derniercri/packages/blob/v4.4.0-alpha.1/src/commands/i18n/check.ts)_
+
+## `derniercri i18n:generate-missing`
+
+Generates missing translations in your code
+
+```
+USAGE
+  $ derniercri i18n:generate-missing
+
+OPTIONS
+  -d, --dictionaries=dictionaries  (required) Your dictionaries root path
+  -h, --help                       show CLI help
+  --src=src                        [default: ./src] Your source path
+
+EXAMPLE
+  $ derniercri i18n:generate-missing -d ./src/i18n/dictionaries
+```
+
+_See code: [src/commands/i18n/generate-missing.ts](https://github.com/derniercri/packages/blob/v4.4.0-alpha.1/src/commands/i18n/generate-missing.ts)_
+
 ## `derniercri setup:fastlane`
 
 Initialize fastlane
@@ -106,7 +147,21 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/setup/fastlane.ts](https://github.com/derniercri/packages/blob/v4.3.0/src/commands/setup/fastlane.ts)_
+_See code: [src/commands/setup/fastlane.ts](https://github.com/derniercri/packages/blob/v4.4.0-alpha.1/src/commands/setup/fastlane.ts)_
+
+## `derniercri setup:i18n`
+
+Initialize i18n
+
+```
+USAGE
+  $ derniercri setup:i18n
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/setup/i18n.ts](https://github.com/derniercri/packages/blob/v4.4.0-alpha.1/src/commands/setup/i18n.ts)_
 
 ## `derniercri setup:sentry`
 
@@ -120,7 +175,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/setup/sentry.ts](https://github.com/derniercri/packages/blob/v4.3.0/src/commands/setup/sentry.ts)_
+_See code: [src/commands/setup/sentry.ts](https://github.com/derniercri/packages/blob/v4.4.0-alpha.1/src/commands/setup/sentry.ts)_
 
 ## `derniercri setup:splash`
 
@@ -134,5 +189,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/setup/splash.ts](https://github.com/derniercri/packages/blob/v4.3.0/src/commands/setup/splash.ts)_
+_See code: [src/commands/setup/splash.ts](https://github.com/derniercri/packages/blob/v4.4.0-alpha.1/src/commands/setup/splash.ts)_
 <!-- commandsstop -->

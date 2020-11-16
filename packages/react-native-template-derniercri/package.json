@@ -1,6 +1,6 @@
 {
   "name": "@derniercri/react-native-template-derniercri",
-  "version": "4.3.1",
+  "version": "4.4.0-alpha.0",
   "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
   "files": [
     "template",
@@ -27,5 +27,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "homepage": "https://github.com/derniercri/packages#readme"
+  "homepage": "https://github.com/derniercri/packages/tree/master/packages/react-native-template-derniercri#readme"
 }
