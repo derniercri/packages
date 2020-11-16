@@ -30,6 +30,7 @@ USAGE
 * [`derniercri generate:native-component [NAME] [PATH]`](#derniercri-generatenative-component-name-path)
 * [`derniercri help [COMMAND]`](#derniercri-help-command)
 * [`derniercri i18n:check`](#derniercri-i18ncheck)
+* [`derniercri i18n:generate-missing`](#derniercri-i18ngenerate-missing)
 * [`derniercri setup:fastlane`](#derniercri-setupfastlane)
 * [`derniercri setup:i18n`](#derniercri-setupi18n)
 * [`derniercri setup:sentry`](#derniercri-setupsentry)
@@ -114,6 +115,25 @@ EXAMPLE
 ```
 
 _See code: [src/commands/i18n/check.ts](https://github.com/derniercri/packages/blob/v4.3.0/src/commands/i18n/check.ts)_
+
+## `derniercri i18n:generate-missing`
+
+Generates missing translations in your code
+
+```
+USAGE
+  $ derniercri i18n:generate-missing
+
+OPTIONS
+  -d, --dictionaries=dictionaries  (required) Your dictionaries root path
+  -h, --help                       show CLI help
+  --src=src                        [default: ./src] Your source path
+
+EXAMPLE
+  $ derniercri i18n:generate-missing -d ./src/i18n/dictionaries
+```
+
+_See code: [src/commands/i18n/generate-missing.ts](https://github.com/derniercri/packages/blob/v4.3.0/src/commands/i18n/generate-missing.ts)_
 
 ## `derniercri setup:fastlane`
 

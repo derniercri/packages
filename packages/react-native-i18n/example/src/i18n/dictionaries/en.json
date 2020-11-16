@@ -1,3 +1,6 @@
 {
-  "hello-world": "Hello, World!"
+  "hello-world": "Hello, World!",
+  "nested": {
+    "hey-buddy": "Hey buddy"
+  }
 }
