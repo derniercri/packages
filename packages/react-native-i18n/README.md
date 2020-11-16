@@ -59,7 +59,7 @@ export default App;
 Install it with
 
 ```shell script
-$ yarn add -D @derniercri/react-native-i18n react-native-localize
+$ yarn add @derniercri/react-native-i18n react-native-localize
 ```
 
 ## Configuration

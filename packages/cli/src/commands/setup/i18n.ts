@@ -2,6 +2,8 @@ import { Command, flags } from "@oclif/command";
 import Listr from "listr";
 import * as fs from "fs";
 import execa from "execa";
+// @ts-ignore
+import listrInquirer from "listr-inquirer";
 
 export default class SetupI18N extends Command {
   static description = "Initialize i18n";
@@ -55,7 +57,7 @@ export default class SetupI18N extends Command {
         },
       },
       {
-        title: "Install dependencies",
+        title: "Install ESLint plugin",
         skip: () => {
           const packageJson = fs.readFileSync("./package.json", "utf-8");
           const packageJsonJson = JSON.parse(packageJson);
@@ -67,10 +69,68 @@ export default class SetupI18N extends Command {
         task: () => execa.command("yarn add -D @derniercri/eslint-config-react-native"),
       },
       {
-        title: "Configure plugin",
+        title: "Install i18n package",
+        skip: () => {
+          const packageJson = fs.readFileSync("./package.json", "utf-8");
+          const packageJsonJson = JSON.parse(packageJson);
+
+          return Object.keys(packageJsonJson.devDependencies || {}).includes(
+            "@derniercri/react-native-i18n"
+          );
+        },
+        task: () => execa.command("yarn add @derniercri/react-native-i18n react-native-localize"),
+      },
+      {
+        title: "Configure ESLint plugin",
         task: (ctx) => {
           fs.writeFileSync(ctx.path, ctx.data);
         },
+      },
+      {
+        title: "Create files",
+        task: (ctx, task) =>
+          listrInquirer(
+            [
+              {
+                type: "confirm",
+                name: "create",
+                message: "Do you want to create necessary files?",
+              },
+            ],
+            function (answers: any) {
+              if (answers.create === false) {
+                task.skip("Skipped");
+              } else {
+                fs.mkdirSync("./src/i18n");
+                fs.mkdirSync("./src/i18n/dictionaries");
+                fs.writeFileSync(
+                  "./src/i18n/dictionaries/en.json",
+                  JSON.stringify({ hello: "world" }, null, 2)
+                );
+                fs.writeFileSync(
+                  "./src/i18n/dictionaries/fr.json",
+                  JSON.stringify({ hello: "world" }, null, 2)
+                );
+
+                fs.writeFileSync(
+                  "./src/i18n/index.ts",
+                  `import I18n from "@derniercri/react-native-i18n";
+
+import en from "./dictionaries/en.json";
+import fr from "./dictionaries/fr.json";
+
+const dictionaries = { en, fr } as const;
+
+const i18n = new I18n<typeof dictionaries>();
+
+i18n.configure({ dictionaries });
+
+export default i18n;
+`
+                );
+              }
+            }
+          ),
       },
     ]);
 
