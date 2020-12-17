@@ -5621,9 +5621,9 @@ github-slugger@^1.2.1:
     emoji-regex ">=6.0.0 <=6.1.1"
 
 gitmoji-changelog@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/gitmoji-changelog/-/gitmoji-changelog-2.1.0.tgz#364746b7e067f9b7d646919b308f86566239e75f"
-  integrity sha512-G31K1hxh8vtIL50/qJe8gjAj9zYlPq7Nx3hBZsjzEOAmaDEHUvaIs57PZJBTcTZS+W4a9UUrk20cJmerThMiuw==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gitmoji-changelog/-/gitmoji-changelog-2.2.0.tgz#1cdc6ef69e96eaafdd310dbd0a3bbb882b2e4ba9"
+  integrity sha512-jr+YmOPihMNKv8w9BFCamaaf6MgekGuI2LXpg9VSUPbjI1zs14iy6fd+MX3ShK7+w0aQGUXW31Im+Zm7fYR4mQ==
   dependencies:
     "@gitmoji-changelog/core" "^2.1.0"
     "@gitmoji-changelog/markdown" "^2.1.0"
@@ -5638,6 +5638,7 @@ gitmoji-changelog@^2.1.0:
     semver "^5.6.0"
     semver-compare "^1.0.0"
     simple-git "^1.113.0"
+    toml "^3.0.0"
     yargs "^12.0.1"
 
 glob-parent@^3.1.0:
@@ -5863,14 +5864,7 @@ hosted-git-info@^2.1.4, hosted-git-info@^2.7.1:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
   integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
 
-hosted-git-info@^3.0.2:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-3.0.5.tgz#bea87905ef7317442e8df3087faa3c842397df03"
-  integrity sha512-i4dpK6xj9BIpVOTboXIlKG9+8HMKggcrMX7WA24xZtKwX0TPelq/rbaS5rCKeNX8sJXZJGdSxpnEGtta+wismQ==
-  dependencies:
-    lru-cache "^6.0.0"
-
-hosted-git-info@^3.0.6:
+hosted-git-info@^3.0.2, hosted-git-info@^3.0.6:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-3.0.7.tgz#a30727385ea85acfcee94e0aad9e368c792e036c"
   integrity sha512-fWqc0IcuXs+BmE9orLDyVykAG9GJtGLGuZAAqgcckPgv5xad4AcXGIv8galtQvlwutxSlaMcdw7BUtq2EIvqCQ==
@@ -10514,6 +10508,11 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     extend-shallow "^3.0.2"
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
+
+toml@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/toml/-/toml-3.0.0.tgz#342160f1af1904ec9d204d03a5d61222d762c5ee"
+  integrity sha512-y/mWCZinnvxjTKYhJ+pYxwD0mRLVvOtdS2Awbgxln6iEnt4rk0yBxeSBHkGJcPucRiG0e55mwWp+g/05rsrd6w==
 
 tough-cookie@^2.3.3, tough-cookie@~2.5.0:
   version "2.5.0"
