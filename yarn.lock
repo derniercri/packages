@@ -1147,6 +1147,16 @@
     lodash "^4.17.11"
     semver "^5.6.0"
 
+"@gitmoji/commit-types@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@gitmoji/commit-types/-/commit-types-1.1.3.tgz#d6333ac41896cf34382d580a4d0d6214a75556aa"
+  integrity sha512-5mRrko9WUWCHmgj4iWxVHEud98JaiB7wgCh4ruEFTyu069UIT8rQmPoWVvgGlKP23nRpXUBxXnc3viLgZu5Ckw==
+
+"@gitmoji/parser-opts@^1.2.4":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@gitmoji/parser-opts/-/parser-opts-1.2.5.tgz#d7adac21a76ed929a497ab8654686d1be244bfa3"
+  integrity sha512-Imxx7OjuZH374H7wNMBEwJ9i1U/0xGEPxjcyYfX47fKzdWZ57UNmiYEC4HoAV8sDpGi4AG0uU4o4NgOiQP1sEg==
+
 "@iarna/cli@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@iarna/cli/-/cli-1.2.0.tgz#0f7af5e851afe895104583c4ca07377a8094d641"
@@ -3833,10 +3843,19 @@ commander@^4.0.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.1.tgz#9fd602bd936294e9e9ef46a3f4d6964044b18068"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
 
-commitlint-config-gitmoji@^1.0.1:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-1.1.0.tgz#babb6808a3eb465a7dd1ecd7546611e5e48f0d68"
-  integrity sha512-x3uGGrYqMLfkhC9QsPweMeBCQOM30kK6lYMbBXHjWHZnq7N/C+D2emSFbuDwDM+lK0Px0Zca2W66VnQ3Xt5M4A==
+commitlint-config-gitmoji@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.1.7.tgz#d67050256cef270a66a01b98b31c649e7bb89ddb"
+  integrity sha512-I9CV2uXNYArT41FI7ynTuCzNoYrj/uplf+F2a//mChSFNbUFlIGmsISBVYwz0HUhhnbO87+8luxzsQnOyHEbIQ==
+  dependencies:
+    "@gitmoji/commit-types" "^1.1.3"
+    "@gitmoji/parser-opts" "^1.2.4"
+    commitlint-plugin-gitmoji "^2.0.4"
+
+commitlint-plugin-gitmoji@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/commitlint-plugin-gitmoji/-/commitlint-plugin-gitmoji-2.0.4.tgz#27253085a2ab1bc5ea0b22edd1d27308a316c76f"
+  integrity sha512-3e3UJabeSpVRhNY/wzitLPxavCQiSyiWpNoCYQf5Zsqnou+W7o97J5VIm19RhwBVzSOEh6/AxrlQVKbDBo6Lxw==
 
 compare-func@^2.0.0:
   version "2.0.0"
