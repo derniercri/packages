@@ -1,30 +1,35 @@
-import { useHeaderHeight } from "@react-navigation/stack";
-import React, { useMemo } from "react";
+import { useHeaderHeight } from '@react-navigation/stack'
+import React, { useMemo } from 'react'
 import {
   Keyboard,
   KeyboardAvoidingView,
   SafeAreaView,
   TouchableWithoutFeedback,
   ViewProps,
-} from "react-native";
+} from 'react-native'
 
-import { isIos } from "../../modules/utils";
-import globalStyles from "../../styles/globalStyles";
+import { isIos } from '../../modules/utils'
+import globalStyles from '../../styles/globalStyles'
 
 interface ScreenProps extends ViewProps {
-  additionalOffset?: number;
+  additionalOffset?: number
 }
 
-const Screen: React.FC<ScreenProps> = ({ additionalOffset = 0, children, style, ...props }) => {
-  const headerHeight = useHeaderHeight();
+const Screen: React.FC<ScreenProps> = ({
+  additionalOffset = 0,
+  children,
+  style,
+  ...props
+}) => {
+  const headerHeight = useHeaderHeight()
   const offset = useMemo(
     () => (isIos ? headerHeight + additionalOffset : 0),
-    [additionalOffset, headerHeight]
-  );
+    [additionalOffset, headerHeight],
+  )
 
   return (
     <KeyboardAvoidingView
-      behavior={isIos ? "padding" : undefined}
+      behavior={isIos ? 'padding' : undefined}
       style={[globalStyles.full, style]}
       keyboardVerticalOffset={offset}
     >
@@ -34,7 +39,7 @@ const Screen: React.FC<ScreenProps> = ({ additionalOffset = 0, children, style, 
         </SafeAreaView>
       </TouchableWithoutFeedback>
     </KeyboardAvoidingView>
-  );
-};
+  )
+}
 
-export default Screen;
+export default Screen
