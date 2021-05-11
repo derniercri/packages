@@ -22,10 +22,10 @@ const Screen: React.FC<ScreenProps> = ({
   ...props
 }) => {
   const headerHeight = useHeaderHeight()
-  const offset = useMemo(() => (isIos ? headerHeight + additionalOffset : 0), [
-    additionalOffset,
-    headerHeight,
-  ])
+  const offset = useMemo(
+    () => (isIos ? headerHeight + additionalOffset : 0),
+    [additionalOffset, headerHeight],
+  )
 
   return (
     <KeyboardAvoidingView
